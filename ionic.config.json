@@ -1,0 +1,8 @@
+{
+  "name": "UniRank",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite",
+  "id": "e166e300"
+}
