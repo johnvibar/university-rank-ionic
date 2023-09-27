@@ -1,0 +1,151 @@
+html * {
+    font-family: "Calibri" !important;
+}
+
+#container {
+    padding: 10px;
+    background-color: #F5F5F5;
+}
+
+#container a {
+    text-decoration: none;
+}
+
+.card-container {
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+}
+
+/* Profile page style */
+.profile-header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.profile-header-item {
+    --border-style: none;
+    margin-left: -16px;
+}
+
+.profile-header img {
+    width: 43px;
+    height: 43px
+}
+
+.profile-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-name b {
+    color: #203456;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.profile-bio {
+    color: #1C345A;
+    font-size: 20px;
+}
+
+.accordion-icon {
+    transform: rotate(270deg);
+    margin-top: 10px;
+}
+
+.btn-profile {
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: #1C345A;
+    color: #ffffff;
+    font-size: 20px;
+    font-style: normal;
+    text-transform: none;
+    --ripple-color: transparent;
+}
+.profile-descrption {
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.card-list {
+    align-items: center;
+    height: 25px;
+}
+
+.card-list ion-img {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.card-list ion-label {
+    font-size: 16px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #BCBCBC;
+}
+
+.ion-align-items {
+    align-items: center;
+    color: #203456;
+    margin-left: 5px;
+}
+
+.ion-align-items p {
+    margin-left: 10px;
+    color: #203456;
+}
+
+.legal-card-container {
+    border-radius: 6px;
+    text-align: center;
+    padding: 5px 0px;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+}
+
+.legal-label {
+    margin: 20px 10px;
+    font-size: 20px;
+    color: #203456;
+}
+
+.card-list-img-legal {
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.logout-label {
+    margin: 20px 10px 10px 10px;
+}
+
+.logout-label b {
+    font-size: 20px;
+    text-decoration: underline;
+    color: #203456;
+}
+
+/* Footer style */
+ion-tabs {
+    background-color: #F5F5F5;
+}
+
+ion-tab-bar {
+    border-radius: 25px 25px 0px 0px;
+}
+
+ion-tab-button {
+    background: #1C345A !important;
+}
+
+.footer-ion-label {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+}
