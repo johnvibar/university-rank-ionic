@@ -90,7 +90,7 @@
         <ion-card class="card-container">
 
           <ion-grid class="border-bottom">
-            <ion-row class="ion-align-items">
+            <ion-row class="ion-align-items" id="open-modal">
               <ion-col size="11">
                 <ion-row class="card-list">
                   <ion-img class="card-list-img" src="/assets/img/icons/icon-search.svg"></ion-img>
@@ -101,6 +101,35 @@
                 <ion-icon :icon="chevronForwardOutline" size="20"></ion-icon>
               </ion-col>
             </ion-row>
+            <ion-modal trigger="open-modal" ref="modal" :initial-breakpoint="1" :breakpoints="[0, 1]">
+              <div class="explore-profile-modal">
+                <ion-text class="modal-title">Complete Your Profile</ion-text>
+                <p>
+                  <ion-text>
+                    It looks like your profile is still in progress. We totally get it - completing forms can be a
+                    bit tedious. But hey, we're here to make your life easier! To provide you with the best study options
+                    and unlock our magical assistance, we need to know a bit more about your preferences. So, grab a
+                    snack, take a moment, and complete your profile. Trust us, it'll be worth it! We've got your back!
+                  </ion-text>
+                </p>
+                <ion-button fill="clear" class="btn-profile-modal" expand="block">Complete Your Profile</ion-button>
+              </div>
+              <div class="explore-profile-modal">
+                <ion-text class="modal-title">College Major Match Quiz</ion-text>
+                <p>
+                  <ion-text>
+                    Still unsure about what you want to study and where to go, huh? We've got your back, and we've got the
+                    perfect solution for you. Take our epic College Major Match Quiz, and let the magic happen. We'll
+                    analyze your answers and work our mystical powers to find the best major that suits your unique
+                    personality. So sit back, relax, and let us do the hard work.
+                  </ion-text>
+                </p>
+                <ion-button fill="clear" class="btn-profile-modal" expand="block">Start The Match Quiz</ion-button>
+              </div>
+              <div class="modal-back-section">
+                <ion-button fill="clear" @click="dismiss()">Back</ion-button>
+              </div>
+            </ion-modal>
           </ion-grid>
 
 
@@ -363,9 +392,14 @@ import {
   IonList,
   actionSheetController,
   IonSelect,
-  IonSelectOption
+  IonSelectOption,
+  IonModal,
 } from '@ionic/vue';
 
 import { chevronForwardOutline, chevronBackOutline } from "ionicons/icons";
+import { ref } from 'vue';
 
+const modal = ref();
+
+const dismiss = () => modal.value.$el.dismiss();
 </script>

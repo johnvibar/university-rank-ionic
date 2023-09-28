@@ -67,6 +67,7 @@ html * {
     text-transform: none;
     --ripple-color: transparent;
 }
+
 .profile-descrption {
     text-align: left;
     padding-top: 0px;
@@ -137,7 +138,7 @@ ion-select {
 }
 
 ion-backdrop {
-    background-color: rgba(1,1,1,0);
+    background-color: rgba(1, 1, 1, 0);
 }
 
 .action-sheet-group.sc-ion-action-sheet-md:first-child {
@@ -183,7 +184,7 @@ ion-backdrop {
     text-align: center;
     border-radius: 15px;
     font-size: 20px;
-    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.16 ));
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
     background: #f5f5f5;
 }
 
@@ -193,6 +194,57 @@ ion-backdrop {
 
 .action-sheet-selected.sc-ion-action-sheet-md {
     font-size: 25px;
+}
+
+/* Explore Modal */
+.explore-profile-modal {
+    height: 100%;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+ion-modal .modal-wrapper {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.modal-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1c345a;
+}
+
+.explore-profile-modal p {
+    text-align: left;
+    font-size: 20px;
+    color: #1c345a;
+}
+
+.btn-profile-modal {
+    background: linear-gradient(-72deg, #436fb2 0.00%, #1c345a 100.00%);
+    border-radius: 15px;
+    color: #ffffff;
+    text-transform: none;
+    height: 50px;
+    font-size: 20px;
+}
+
+.modal-back-section {
+    border-radius: 25px 25px 0px 0px;
+    background: #f5f5f5;
+    height: 80px;
+    padding: 10px;
+}
+
+.modal-back-section ion-button {
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 20px;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+    background: #f5f5f5;
+    color: #000000;
+    text-transform: none;
 }
 
 /* Footer style */
