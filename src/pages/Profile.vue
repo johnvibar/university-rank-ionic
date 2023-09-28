@@ -90,7 +90,7 @@
         <ion-card class="card-container">
 
           <ion-grid class="border-bottom">
-            <ion-row class="ion-align-items" id="open-modal">
+            <ion-row class="ion-align-items" id="open-modal-profile">
               <ion-col size="11">
                 <ion-row class="card-list">
                   <ion-img class="card-list-img" src="/assets/img/icons/icon-search.svg"></ion-img>
@@ -101,7 +101,7 @@
                 <ion-icon :icon="chevronForwardOutline" size="20"></ion-icon>
               </ion-col>
             </ion-row>
-            <ion-modal trigger="open-modal" ref="modal" :initial-breakpoint="1" :breakpoints="[0, 1]">
+            <ion-modal trigger="open-modal-profile" ref="modal" :initial-breakpoint="1" :breakpoints="[0, 1]">
               <div class="explore-profile-modal">
                 <ion-text class="modal-title">Complete Your Profile</ion-text>
                 <p>
@@ -304,7 +304,7 @@
 
 
           <ion-grid>
-            <ion-row class="ion-align-items">
+            <ion-row class="ion-align-items" id="open-modal-settings">
               <ion-col size="11">
                 <ion-row class="card-list">
                   <ion-img class="card-list-img" src="/assets/img/icons/icon-setting.svg"></ion-img>
@@ -315,6 +315,24 @@
                 <ion-icon :icon="chevronForwardOutline"></ion-icon>
               </ion-col>
             </ion-row>
+            <ion-modal class="settings-modal" trigger="open-modal-settings" ref="modal-settings" :initial-breakpoint="1" :breakpoints="[0, 1]">
+              <div class="settings-modal-main">
+                <ion-text class="modal-title">Settings</ion-text>
+                <ion-card>
+                  <ion-label>Marketing Notificat</ion-label>
+                  <ion-toggle :checked="true"></ion-toggle>
+                </ion-card>
+                <ion-card>
+                  <ion-label>Subscibe to emails</ion-label>
+                  <ion-toggle :checked="true"></ion-toggle>
+                </ion-card>
+                <ion-label><p>Delete my account</p></ion-label>
+              </div>
+              <ion-label class="version-label">UNIRANKS APP Version 2.00</ion-label>
+              <div class="modal-back-section">
+                <ion-button fill="clear" @click="dismiss()">Back</ion-button>
+              </div>
+            </ion-modal>
           </ion-grid>
 
         </ion-card>
