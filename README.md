@@ -1,5 +1,4 @@
-# uni-rank
-
+# students-web-v2
 Built by Vue.js + Ionic
 
 ## Install the Ionic CLI​

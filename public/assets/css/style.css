@@ -131,6 +131,76 @@ html * {
     color: #203456;
 }
 
+/* Action sheet style */
+ion-select {
+    opacity: 0;
+}
+
+ion-backdrop {
+    background-color: rgba(1,1,1,0);
+}
+
+.action-sheet-group.sc-ion-action-sheet-md:first-child {
+    padding-bottom: 50px;
+    margin-bottom: -50px;
+}
+
+.action-sheet-title.sc-ion-action-sheet-md {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #1C345A;
+}
+
+.action-sheet-icon.sc-ion-action-sheet-md {
+    font-size: 20px;
+}
+
+.action-sheet-group.action-sheet-group-cancel {
+    background-color: #f5f5f5;
+    height: 80px;
+}
+
+.action-sheet-group.sc-ion-action-sheet-md {
+    border-radius: 25px 25px 0px 0px;
+}
+
+/* .action-sheet-button.sc-ion-action-sheet-md span:first-child {
+    background-image: url("/assets/img/icons/icon-currency-euro.svg");
+    background-repeat: no-repeat;
+    display: inline-table;
+    padding-left: 20px;
+} */
+
+.action-sheet-selected.sc-ion-action-sheet-md span {
+    color: #00AEEF;
+    background-image: url("/assets/img/icons/icon-feather-check.png");
+    background-position-x: right;
+    background-repeat: no-repeat;
+    display: inline-table;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.action-sheet-group.action-sheet-group-cancel button {
+    width: 40%;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 20px;
+    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.16 ));
+    background: #f5f5f5;
+}
+
+.action-sheet-group.action-sheet-group-cancel span {
+    justify-content: center;
+}
+
+.action-sheet-selected.sc-ion-action-sheet-md {
+    font-size: 25px;
+}
+
 /* Footer style */
 ion-tabs {
     background-color: #F5F5F5;
