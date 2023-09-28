@@ -165,19 +165,13 @@ ion-backdrop {
     border-radius: 25px 25px 0px 0px;
 }
 
-/* .action-sheet-button.sc-ion-action-sheet-md span:first-child {
-    background-image: url("/assets/img/icons/icon-currency-euro.svg");
-    background-repeat: no-repeat;
-    display: inline-table;
-    padding-left: 20px;
-} */
-
 .action-sheet-selected.sc-ion-action-sheet-md span {
     color: #00AEEF;
     background-image: url("/assets/img/icons/icon-feather-check.png");
     background-position-x: right;
+    background-position-y: center;
     background-repeat: no-repeat;
-    display: inline-table;
+    justify-content: flex-start;
     font-size: 20px;
     font-weight: bold;
 }

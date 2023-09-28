@@ -239,6 +239,12 @@
                 <ion-row class="card-list">
                   <ion-img class="card-list-img" src="/assets/img/icons/icon-metro-language.svg"></ion-img>
                   <ion-label>Change Language</ion-label>
+                  <ion-select interface="action-sheet" label="language" :interface-options="{ header: ('Language') }"
+                    cancel-text="Back">
+                    <ion-select-option value="english">English</ion-select-option>
+                    <ion-select-option value="arabic">Arabic</ion-select-option>
+                    <ion-select-option value="turkish">Turkish</ion-select-option>
+                  </ion-select>
                 </ion-row>
               </ion-col>
               <ion-col size="1">
@@ -254,12 +260,9 @@
                 <ion-row class="card-list">
                   <ion-img class="card-list-img" src="/assets/img/icons/icon-material-moneti.svg"></ion-img>
                   <ion-label>Change Currency</ion-label>
-                  <ion-select interface="action-sheet" label="fruit" :interface-options="{ header: ('Currency') }"
+                  <ion-select interface="action-sheet" label="currency" :interface-options="{ header: ('Currency') }"
                     cancel-text="Back">
-                    <ion-select-option value="euro">
-                      <ion-img item-start src="/assets/img/icons/icon-currency-euro.svg"></ion-img>
-                      Euro
-                    </ion-select-option>
+                    <ion-select-option value="euro">Euro</ion-select-option>
                     <ion-select-option value="dollar">U.S. dollar</ion-select-option>
                   </ion-select>
                 </ion-row>
