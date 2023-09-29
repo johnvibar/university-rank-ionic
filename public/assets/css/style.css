@@ -66,6 +66,7 @@ html * {
     font-style: normal;
     text-transform: none;
     --ripple-color: transparent;
+    --background-focused: #1C345A;
 }
 
 .profile-descrption {
@@ -207,10 +208,6 @@ ion-backdrop {
     text-align: center;
 }
 
-ion-modal .modal-wrapper {
-    border-radius: 25px 25px 0px 0px;
-}
-
 .modal-title {
     font-size: 30px;
     font-weight: bold;
@@ -328,6 +325,61 @@ ion-modal .modal-wrapper {
 .settings-modal .ion-overlay-wrapper {
     border-radius: 25px 25px 0px 0px;
 }
+
+/* Edit Profile modal */
+.edit-profile-modal {
+    --border-radius: 25px 25px 0px 0px;
+}
+
+.edit-profile-modal-main {
+    height: 100%;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.edit-profile-modal-main ion-card {
+    border-radius: 15px;
+}
+
+.edit-profile-modal-main ion-input {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.edit-profile-modal-main ion-item {
+    --padding-start: 0px;
+}
+
+.edit-profile-modal-main ion-label p {
+    margin-left: 10px;
+    color: #606060;
+    font-size: 16px;
+}
+
+.modal-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1c345a;
+}
+
+.edit-profile-modal-main p {
+    text-align: left;
+    font-size: 20px;
+    color: #1c345a;
+}
+
+.edit-profile-modal-main ion-item ion-input {
+    margin-left: 20px;
+}
+
+.edit-profile-modal-main ion-item ion-img {
+    margin-left: 20px;
+}
+
+.edit-profile-modal-main ion-item ion-label {
+    margin-left: 5px;
+}
+
 /* Footer style */
 ion-tabs {
     background-color: #F5F5F5;

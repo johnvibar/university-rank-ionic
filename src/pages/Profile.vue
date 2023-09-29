@@ -33,7 +33,73 @@
                     and
                     <b>4</b> other countries.</ion-label>
                 </ion-card-content>
-                <ion-button fill="clear" class="btn-profile">View or Edit The Profile</ion-button>
+                <ion-button fill="clear" class="btn-profile" id="edit-profile-modal">View or Edit The Profile</ion-button>
+                <ion-modal class="edit-profile-modal" trigger="edit-profile-modal"  ref="modal"
+                  :initial-breakpoint="1" :breakpoints="[0, 1]">
+                  <div class="edit-profile-modal-main">
+                    <ion-text class="modal-title">Edit Profile</ion-text>
+                    <ion-card>
+                      <ion-item>
+                        <ion-input placeholder="First Name"></ion-input>
+                      </ion-item>
+                      <ion-item>
+                        <ion-input placeholder="Last Name"></ion-input>
+                      </ion-item>
+                    </ion-card>
+                    <ion-card>
+                      <ion-item>
+                        <ion-input placeholder="Country of Residence"></ion-input>
+                      </ion-item>
+                      <ion-item>
+                        <ion-input placeholder="City of Residence"></ion-input>
+                      </ion-item>
+                    </ion-card>
+                    <ion-card>
+                      <ion-item>
+                        <ion-input placeholder="Nationality"></ion-input>
+                      </ion-item>
+                    </ion-card>
+                    <ion-label>
+                      <p>Time to spill the beans on your country of residence! Don't worry, we'll use it to
+                        connect you with a super-smart counselor who knows the ins and outs of your geography.
+                      </p>
+                    </ion-label>
+                    <ion-card>
+                      <ion-row>
+                        <ion-item>
+                          <ion-img src="assets/img/icons/icon-us-flag.svg"></ion-img>
+                          <ion-label>+1</ion-label>
+                          <ion-item>
+                            <ion-input type="number" placeholder="Phone Number"></ion-input>
+                          </ion-item>
+                        </ion-item>
+                      </ion-row>
+                    </ion-card>
+                    <ion-card>
+                      <ion-item>
+                        <ion-input placeholder="Email ID"></ion-input>
+                      </ion-item>
+                      <ion-item>
+                        <ion-grid>
+                          <ion-row class="ion-align-items">
+                            <ion-col size="11">
+                              <ion-row class="card-list">
+                                <ion-label>Password</ion-label>
+                              </ion-row>
+                            </ion-col>
+                            <ion-col size="1">
+                              <ion-icon :icon="chevronForwardOutline" size="20"></ion-icon>
+                            </ion-col>
+                          </ion-row>
+                        </ion-grid>
+                      </ion-item>
+                    </ion-card>
+                  </div>
+                  <div class="modal-upload-section">
+                    <ion-img src="assets/img/icons/icon-arrow-back.svg"></ion-img>
+                    <ion-button fill="clear" @click="dismiss()">Save</ion-button>
+                  </div>
+                </ion-modal>
               </ion-list>
             </ion-accordion>
           </ion-accordion-group>
@@ -101,7 +167,8 @@
                 <ion-icon :icon="chevronForwardOutline" size="20"></ion-icon>
               </ion-col>
             </ion-row>
-            <ion-modal class="explore-profile-modal" trigger="open-modal-profile" ref="modal" :initial-breakpoint="1" :breakpoints="[0, 1]">
+            <ion-modal class="explore-profile-modal" trigger="open-modal-profile" ref="modal" :initial-breakpoint="1"
+              :breakpoints="[0, 1]">
               <div class="explore-profile-modal-main">
                 <ion-text class="modal-title">Complete Your Profile</ion-text>
                 <p>
@@ -315,7 +382,8 @@
                 <ion-icon :icon="chevronForwardOutline"></ion-icon>
               </ion-col>
             </ion-row>
-            <ion-modal class="settings-modal" trigger="open-modal-settings" ref="modal-settings" :initial-breakpoint="1" :breakpoints="[0, 1]">
+            <ion-modal class="settings-modal" trigger="open-modal-settings" ref="modal" :initial-breakpoint="1"
+              :breakpoints="[0, 1]">
               <div class="settings-modal-main">
                 <ion-text class="modal-title">Settings</ion-text>
                 <ion-card>
@@ -326,7 +394,9 @@
                   <ion-label>Subscibe to emails</ion-label>
                   <ion-toggle :checked="true"></ion-toggle>
                 </ion-card>
-                <ion-label><p>Delete my account</p></ion-label>
+                <ion-label>
+                  <p>Delete my account</p>
+                </ion-label>
               </div>
               <ion-label class="version-label">UNIRANKS APP Version 2.00</ion-label>
               <div class="modal-upload-section">
@@ -413,6 +483,9 @@ import {
   IonSelect,
   IonSelectOption,
   IonModal,
+  IonText,
+  IonInput,
+  IonToggle,
 } from '@ionic/vue';
 
 import { chevronForwardOutline, chevronBackOutline } from "ionicons/icons";
