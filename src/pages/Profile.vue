@@ -101,8 +101,8 @@
                 <ion-icon :icon="chevronForwardOutline" size="20"></ion-icon>
               </ion-col>
             </ion-row>
-            <ion-modal trigger="open-modal-profile" ref="modal" :initial-breakpoint="1" :breakpoints="[0, 1]">
-              <div class="explore-profile-modal">
+            <ion-modal class="explore-profile-modal" trigger="open-modal-profile" ref="modal" :initial-breakpoint="1" :breakpoints="[0, 1]">
+              <div class="explore-profile-modal-main">
                 <ion-text class="modal-title">Complete Your Profile</ion-text>
                 <p>
                   <ion-text>
@@ -114,7 +114,7 @@
                 </p>
                 <ion-button fill="clear" class="btn-profile-modal" expand="block">Complete Your Profile</ion-button>
               </div>
-              <div class="explore-profile-modal">
+              <div class="explore-profile-modal-main">
                 <ion-text class="modal-title">College Major Match Quiz</ion-text>
                 <p>
                   <ion-text>
@@ -329,8 +329,9 @@
                 <ion-label><p>Delete my account</p></ion-label>
               </div>
               <ion-label class="version-label">UNIRANKS APP Version 2.00</ion-label>
-              <div class="modal-back-section">
-                <ion-button fill="clear" @click="dismiss()">Back</ion-button>
+              <div class="modal-upload-section">
+                <ion-img src="assets/img/icons/icon-arrow-back.svg"></ion-img>
+                <ion-button fill="clear" @click="dismiss()">Upload</ion-button>
               </div>
             </ion-modal>
           </ion-grid>
