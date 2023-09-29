@@ -34,8 +34,8 @@
                     <b>4</b> other countries.</ion-label>
                 </ion-card-content>
                 <ion-button fill="clear" class="btn-profile" id="edit-profile-modal">View or Edit The Profile</ion-button>
-                <ion-modal class="edit-profile-modal" trigger="edit-profile-modal"  ref="modal"
-                  :initial-breakpoint="1" :breakpoints="[0, 1]">
+                <ion-modal class="edit-profile-modal" trigger="edit-profile-modal" ref="modal" :initial-breakpoint="1"
+                  :breakpoints="[0, 1]">
                   <div class="edit-profile-modal-main">
                     <ion-text class="modal-title">Edit Profile</ion-text>
                     <ion-card>
@@ -79,7 +79,7 @@
                       <ion-item>
                         <ion-input placeholder="Email ID"></ion-input>
                       </ion-item>
-                      <ion-item>
+                      <ion-item id="reset-pwd-modal">
                         <ion-grid>
                           <ion-row class="ion-align-items">
                             <ion-col size="11">
@@ -93,6 +93,35 @@
                           </ion-row>
                         </ion-grid>
                       </ion-item>
+                      <ion-modal class="reset-pwd-modal" trigger="reset-pwd-modal" ref="modal" :initial-breakpoint="1"
+                        :breakpoints="[0, 1]">
+                        <div class="reset-pwd-modal-main">
+                          <ion-text class="modal-title">Reset Password</ion-text><br/><br/>
+                          <ion-text class="modal-sub-title">Enter your new Password</ion-text><br/>
+                          <ion-card>
+                            <ion-item>
+                              <ion-input placeholder="Current Password"></ion-input>
+                              <ion-img src="assets/img/icons/icon-eye.svg"></ion-img>
+                            </ion-item>
+                          </ion-card>
+                          <ion-card>
+                            <ion-item>
+                              <ion-input placeholder="New Password"></ion-input>
+                              <ion-img src="assets/img/icons/icon-eye.svg"></ion-img>
+                            </ion-item>
+                          </ion-card>
+                          <ion-card>
+                            <ion-item>
+                              <ion-input placeholder="Confirm Password"></ion-input>
+                              <ion-img src="assets/img/icons/icon-eye.svg"></ion-img>
+                            </ion-item>
+                          </ion-card>
+                        </div>
+                        <div class="modal-upload-section">
+                          <ion-img src="assets/img/icons/icon-arrow-back.svg"></ion-img>
+                          <ion-button fill="clear" @click="dismiss()">Save</ion-button>
+                        </div>
+                      </ion-modal>
                     </ion-card>
                   </div>
                   <div class="modal-upload-section">
