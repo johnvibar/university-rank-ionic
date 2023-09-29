@@ -251,7 +251,7 @@ ion-backdrop {
     border-radius: 15px;
     font-size: 20px;
     background: #436fb2;
-    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.16 ));
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
     background: #f5f5f5;
     color: #1c345a;
     text-transform: none;
@@ -282,7 +282,7 @@ ion-backdrop {
 }
 
 .settings-modal p {
-    color: red;
+    color: #FF0000;
     float: left;
     padding: 10px;
     font-size: 20px;
@@ -317,7 +317,7 @@ ion-backdrop {
     border-radius: 15px;
     font-size: 20px;
     background: #436fb2;
-    background: linear-gradient(-72deg, #436fb2 0.00%,#1c345a 100.00%);
+    background: linear-gradient(-72deg, #436fb2 0.00%, #1c345a 100.00%);
     color: #ffffff;
     text-transform: none;
 }
@@ -400,6 +400,60 @@ ion-backdrop {
 .reset-pwd-modal-main ion-card {
     border-radius: 10px;
     border-color: #bcbcbc;
+}
+
+/* logout modal */
+.logout-modal {
+    --height: auto;
+    --border-radius: 25px 25px 0px 0px;
+    text-align: center;
+}
+
+.logout-modal-main {
+    padding: 30px 0px 0px 0px;
+    height: 504px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-modal-main ion-img {
+    width: 210.6px;
+    height: 300.1px;
+}
+
+.logout-modal-main ion-text {
+    font-size: 30px;
+    width: 70%;
+}
+
+.modal-logout-section {
+    border-radius: 25px 25px 0px 0px;
+    background: #f5f5f5;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-logout-section ion-button {
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 20px;
+    background: #436fb2;
+    background: linear-gradient(-72deg, #436fb2 0.00%, #1c345a 100.00%);
+    color: #ffffff;
+    text-transform: none;
+}
+
+.modal-logout-section .btn-cancel {
+    background: #f5f5f5;
+    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.16 ));
+    color: #FF0000;
 }
 
 /* Footer style */

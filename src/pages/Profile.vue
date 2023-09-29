@@ -96,8 +96,8 @@
                       <ion-modal class="reset-pwd-modal" trigger="reset-pwd-modal" ref="modal" :initial-breakpoint="1"
                         :breakpoints="[0, 1]">
                         <div class="reset-pwd-modal-main">
-                          <ion-text class="modal-title">Reset Password</ion-text><br/><br/>
-                          <ion-text class="modal-sub-title">Enter your new Password</ion-text><br/>
+                          <ion-text class="modal-title">Reset Password</ion-text><br /><br />
+                          <ion-text class="modal-sub-title">Enter your new Password</ion-text><br />
                           <ion-card>
                             <ion-item>
                               <ion-input placeholder="Current Password"></ion-input>
@@ -477,8 +477,18 @@
 
         <div class="logout-label">
 
-          <ion-label><b>Log Out</b></ion-label>
-
+          <ion-label id="logout-modal"><b>Log Out</b></ion-label>
+          <ion-modal class="logout-modal" trigger="logout-modal" ref="modal" :initial-breakpoint="1"
+            :breakpoints="[0, 1]">
+            <div class="logout-modal-main">
+                <ion-img src="assets/img/logout-image.svg"></ion-img>
+                <ion-text>Are you sure you want to log out?</ion-text>
+            </div>
+            <div class="modal-logout-section">
+              <ion-button class="btn-cancel" fill="clear" @click="dismiss()">Cancel</ion-button>
+              <ion-button fill="clear">Confirm</ion-button>
+            </div>
+          </ion-modal>
         </div>
 
       </div>
