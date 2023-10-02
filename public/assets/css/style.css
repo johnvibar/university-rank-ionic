@@ -425,7 +425,10 @@ ion-backdrop {
 
 .logout-modal-main ion-text {
     font-size: 30px;
-    width: 70%;
+    width: 60%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #1c345a;
 }
 
 .modal-logout-section {
@@ -452,8 +455,129 @@ ion-backdrop {
 
 .modal-logout-section .btn-cancel {
     background: #f5f5f5;
-    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.16 ));
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
     color: #FF0000;
+}
+
+/* Bookmarks modal */
+.bookmarks-modal-header ion-title {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    color: #1c345a;
+}
+
+.bookmarks-modal-header ion-text {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    color: #606060;
+}
+
+.bookmarks-modal {
+    --border-radius: 25px 25px 0px 0px;
+    text-align: center;
+}
+
+.bookmarks-modal-main {
+    padding: 30px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookmarks-modal-main ion-img {
+    width: 237.2px;
+    height: 266.3px;
+}
+
+.bookmarks-modal-main ion-text {
+    font-size: 30px;
+    width: 70%;
+    color: #606060;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.bookmarks-modal-main ion-text span {
+    color: #606060;
+    font-size: 16px;
+    float: left;
+    padding: 20px;
+}
+
+.bookmarks-card {
+    padding: 5px 10px 15px 10px;
+    text-align: left;
+}
+
+.bookmarks-card-header {
+    font-size: 16px;
+    font-weight: bold;
+    color: #203456;
+}
+
+.bookmarks-card-main {
+    display: flex;
+    margin-top: 5px;
+}
+
+.bookmarks-card-center {
+    display: grid;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.bookmarks-card-center {
+    color: #203456;
+}
+
+.bookmarks-card-center ion-label:last-child {
+    color: #606060;
+}
+
+.bookmarks-card-right {
+    display: grid;
+    align-items: self-end;
+    justify-items: end;
+}
+
+.bookmarks-card-right ion-icon {
+    margin-top: -20px;
+}
+
+.bookmarks-card-right ion-label {
+    color: #007A00;
+}
+
+.bookmarks-section {
+    border-radius: 25px 25px 0px 0px;
+    background: #f5f5f5;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookmarks-section ion-button {
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 20px;
+    background: #436fb2;
+    background: linear-gradient(-72deg, #436fb2 0.00%, #1c345a 100.00%);
+    color: #ffffff;
+    text-transform: none;
+}
+
+.bookmarks-card ion-img {
+    width: 50px;
+    height: 50.6px;
 }
 
 /* Footer style */

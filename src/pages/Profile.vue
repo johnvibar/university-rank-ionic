@@ -293,7 +293,7 @@
 
 
           <ion-grid>
-            <ion-row class="ion-align-items">
+            <ion-row class="ion-align-items" id="bookmarks-modal">
               <ion-col size="11">
                 <ion-row class="card-list">
                   <ion-img class="card-list-img" src="/assets/img/icons/icon-bookmarks.svg"></ion-img>
@@ -304,6 +304,41 @@
                 <ion-icon :icon="chevronForwardOutline"></ion-icon>
               </ion-col>
             </ion-row>
+
+            <ion-modal class="bookmarks-modal" trigger="bookmarks-modal" ref="modal" :initial-breakpoint="1"
+              :breakpoints="[0, 1]">
+              <div class="bookmarks-modal-main">
+                <div class="bookmarks-modal-header">
+                  <ion-title>Bookmarks</ion-title>
+                  <ion-text>
+                    <span>Time to kickstart your study adventure! Begin mapping out your journey by bookmarking your
+                      favorite
+                      courses. Just hit that trusty bookmark button, and voila! Your chosen courses will be right
+                      here</span>
+                  </ion-text>
+                </div>
+                <ion-text>You Haven't bookmark any courses for now</ion-text>
+                <ion-img src="assets/img/bookmarks-image.svg"></ion-img>
+                <ion-card class="bookmarks-card">
+                  <ion-label class="bookmarks-card-header">BS Software Engineering</ion-label>
+                  <div class="bookmarks-card-main">
+                    <ion-img src="/assets/img/university-of-michig.png"></ion-img>
+                    <div class="bookmarks-card-center">
+                      <ion-label>University of Michigan</ion-label>
+                      <ion-label>Local #1 | Global #5 | Score 96.24</ion-label>
+                      <ion-label>United States of America</ion-label>
+                    </div>
+                    <div class="bookmarks-card-right">
+                      <ion-icon :icon="chevronForwardOutline"></ion-icon>
+                      <ion-label>Recognized in Jordan</ion-label>
+                    </div>
+                  </div>
+                </ion-card>
+              </div>
+              <div class="bookmarks-section">
+                <ion-button fill="clear">Explore Courses</ion-button>
+              </div>
+            </ion-modal>
           </ion-grid>
 
         </ion-card>
@@ -481,8 +516,8 @@
           <ion-modal class="logout-modal" trigger="logout-modal" ref="modal" :initial-breakpoint="1"
             :breakpoints="[0, 1]">
             <div class="logout-modal-main">
-                <ion-img src="assets/img/logout-image.svg"></ion-img>
-                <ion-text>Are you sure you want to log out?</ion-text>
+              <ion-img src="assets/img/logout-image.svg"></ion-img>
+              <ion-text>Are you sure you want to log out?</ion-text>
             </div>
             <div class="modal-logout-section">
               <ion-button class="btn-cancel" fill="clear" @click="dismiss()">Cancel</ion-button>
