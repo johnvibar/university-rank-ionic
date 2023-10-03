@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      <div class="chat-container">
+      <div class="auth-container">
         <ion-label class="auth-title">Want to talk!</ion-label>
         <ion-img class="auth-logo" src="/assets/img/auth/chat-login.png"></ion-img>
         <ion-text class="auth-description">Time to bust out your login moves!</ion-text>
@@ -24,6 +24,8 @@ import {
   IonSelectOption,
   IonSelect,
   IonItem,
+  IonText,
 } from '@ionic/vue';
 
-</script>
+</script>,
+IonText

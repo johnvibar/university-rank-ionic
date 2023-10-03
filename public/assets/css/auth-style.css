@@ -8,6 +8,16 @@
   text-align: center;
 }
 
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #1C345A;
+  padding: 50px 10px 0px 10px;
+  text-align: center;
+  align-items: center;
+}
+
 /* language setting page */
 
 .lang-body {
@@ -62,27 +72,12 @@ ion-button {
 
 /* chat login page */
 
-.chat-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #1C345A;
-  padding: 50px 0px 0px 0px;
-  text-align: center;
-  align-items: center;
-}
-
 .auth-title {
   font-size: 37px;
   font-weight: bold;
   font-style: normal;
   text-align: center;
   color: #ffffff;
-}
-
-.auth-logo {
-  width: 146.2px;
-  height: 221px;
 }
 
 .auth-description {
@@ -106,4 +101,5 @@ ion-button {
   padding: 5px 30px;
   font-size: 20px;
   text-transform: none;
+  max-width: 300px;
 }

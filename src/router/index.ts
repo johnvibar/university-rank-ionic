@@ -9,6 +9,7 @@ import Tabs from '../layouts/Tabs.vue';
 import ArabicLang from '../pages/auth/ArabicLang.vue';
 import TurkishLang from '../pages/auth/TurkishLang.vue';
 import ChatLogin from '../pages/auth/ChatLogin.vue';
+import AppLogin from '../pages/auth/AppLogin.vue';
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -19,16 +20,20 @@ const routes: Array<RouteRecordRaw> = [
     component: ArabicLang
   },
   {
+    path: '/auth/turkish-lang',
+    name: 'turkish-lang',
+    component: TurkishLang
+  },
+  {
     path: '/auth/chat-login',
     name: 'chat-login',
     component: ChatLogin
   },
   {
-    path: '/auth/turkish-lang',
-    name: 'turkish-lang',
-    component: TurkishLang
+    path: '/auth/app-login',
+    name: 'app-login',
+    component: AppLogin
   },
-
   //9. Student Profile
   {
     path: '/profile',
