@@ -2,14 +2,14 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      <div class="arabic-lang-container">
-        <div>
-          <ion-img src="/assets/img/auth/turkish-lang1.png"></ion-img>  
-          <ion-img class="img-rocket" src="/assets/img/auth/rocket-img.png"></ion-img>  
+      <div class="lang-container">
+        <div class="lang-body">
+          <ion-img class="header-logo" src="/assets/img/auth/turkish-lang1.png"></ion-img>  
+          <ion-img class="lang-logo" src="/assets/img/auth/rocket-img.png"></ion-img>  
           <ion-img class="img-arabic-letter" src="/assets/img/auth/turkish-lang2.png"></ion-img>
           <ion-button fill="clear" expand="block">Türkçe devam et</ion-button>
         </div>
-        <div class="arabic-lang-bottom">
+        <div class="lang-bottom">
           <ion-label>English</ion-label> 
           <ion-item>
             <ion-select aria-label="Pick a Language" placeholder="Pick a Language">

@@ -8,6 +8,7 @@ import Tabs from '../layouts/Tabs.vue';
 // 1. Login and Register pages
 import ArabicLang from '../pages/auth/ArabicLang.vue';
 import TurkishLang from '../pages/auth/TurkishLang.vue';
+import ChatLogin from '../pages/auth/ChatLogin.vue';
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -16,6 +17,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/auth/arabic-lang',
     name: 'arabic-lang',
     component: ArabicLang
+  },
+  {
+    path: '/auth/chat-login',
+    name: 'chat-login',
+    component: ChatLogin
   },
   {
     path: '/auth/turkish-lang',
