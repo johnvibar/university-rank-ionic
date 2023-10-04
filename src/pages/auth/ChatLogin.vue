@@ -38,7 +38,7 @@
               <ion-card>
                 <ion-item>
                   <ion-input placeholder="Password"></ion-input>
-                  <ion-img src="assets/img/icons/icon-eye.svg"></ion-img>                  
+                  <ion-img src="assets/img/icons/icon-eye.svg"></ion-img>
                 </ion-item>
               </ion-card>
               <ion-item class="login-modal-description">
@@ -97,5 +97,4 @@ import {
   IonRow,
 } from '@ionic/vue';
 
-</script>,
-IonText
+</script>
