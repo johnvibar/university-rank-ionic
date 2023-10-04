@@ -204,3 +204,12 @@ ion-button {
   text-align: center;
   color: #606060;
 }
+
+/* Chat Signup page */
+.chat-signup-title {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #203456;
+}

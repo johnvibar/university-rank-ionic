@@ -5,6 +5,7 @@ html * {
 #container {
     padding: 10px;
     background-color: #F5F5F5;
+    min-height: 100vh;
 }
 
 #container a {
@@ -354,6 +355,27 @@ ion-backdrop {
     margin-left: 10px;
     color: #606060;
     font-size: 16px;
+}
+
+.edit-profile-modal-main ion-checkbox {
+    padding-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    color: #606060;
+}
+
+.edit-profile-modal-main ion-label span {
+    margin-left: 10px;
+    color: #00AEEF;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.edit-profile-modal-main ion-button {
+    border-radius: 15px;
+    background: #1c345a;
+    color: #ffffff;
+    text-transform: none;
 }
 
 .modal-title {
