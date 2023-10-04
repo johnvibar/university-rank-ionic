@@ -10,6 +10,7 @@ import ArabicLang from '../pages/auth/ArabicLang.vue';
 import TurkishLang from '../pages/auth/TurkishLang.vue';
 import ChatLogin from '../pages/auth/ChatLogin.vue';
 import AppLogin from '../pages/auth/AppLogin.vue';
+import ChatSignUp from '../pages/auth/ChatSignUp.vue';
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -28,6 +29,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/auth/chat-login',
     name: 'chat-login',
     component: ChatLogin
+  },
+  {
+    path: '/auth/chat-signup',
+    name: 'chat-signup',
+    component: ChatSignUp
   },
   {
     path: '/auth/app-login',

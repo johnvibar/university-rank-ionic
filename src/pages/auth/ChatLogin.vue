@@ -91,6 +91,9 @@ import {
   IonItem,
   IonText,
   IonModal,
+  IonInput,
+  IonCard,
+  IonRow,
 } from '@ionic/vue';
 
 </script>,
