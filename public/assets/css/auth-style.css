@@ -213,3 +213,37 @@ ion-button {
   font-weight: bold;
   color: #203456;
 }
+
+.signup-modal {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.signup-modal ion-title {
+  font-size: 26px;
+  color: #203456;
+  font-weight: bold;
+}
+
+.signup-modal ion-card {
+  border-radius: 15px;
+  border: 1px solid #7fc4fd;
+}
+
+.signup-modal ion-icon {
+  transform: rotate(180deg);
+}
+
+.signup-modal ion-item {
+  --inner-border-width: 0 0 0px 0;
+  color: #1C345A;
+}
+
+.signup-modal hr {
+  border-top: 1px solid;
+  width: 80%;
+  border-color: #bcbcbc;
+}
