@@ -103,3 +103,104 @@ ion-button {
   text-transform: none;
   max-width: 300px;
 }
+
+.login-modal {
+  --height: auto;
+  --border-radius: 25px 25px 0px 0px;
+}
+
+.login-modal-main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 10px 0px 10px;
+  height: 400px;
+}
+
+.login-modal-main ion-item {
+  --inner-border-width: 0 0 0px 0;
+}
+
+.login-modal-main ion-card {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.login-modal-main ion-text {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: #606060;
+}
+
+.login-modal-description {
+  padding: 0px 30px;
+  --inner-border-width: 0 0 0px 0;
+}
+
+.login-modal-description ion-text {
+  font-size: 20px !important;
+  font-weight: 300;
+  text-align: center;
+  color: #606060 !important;
+}
+
+.btn-continue {
+  border-radius: 15px;
+  color: #ffffff;
+  background: #00aeef;
+  text-transform: none;
+  margin: 20px 30px;
+  width: 80%;
+}
+
+.divider {
+  width: 100%;
+}
+
+.divider hr {
+  border-top: 1px solid #bcbcbc;
+  width: 40%;
+}
+
+.btn-google-login {
+  font-size: 20px;
+  background-color: #1C345A;
+  border-radius: 15px;
+  color: #ffffff;
+  text-transform: none;
+  margin: 20px 30px;
+  background-image: url('../../assets/img/auth/icon-google.svg');
+  background-repeat: no-repeat;
+  background-position-y: 10px;
+  background-position-x: 10%;
+  width: 80%;
+}
+
+.login-pwd-modal-main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 10px 0px 10px;
+  height: 500px;
+}
+
+.login-pwd-modal-main ion-item {
+  --inner-border-width: 0 0 0px 0;
+}
+
+.login-pwd-modal-main ion-card {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.login-pwd-modal-main ion-text {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: #606060;
+}
