@@ -70,6 +70,10 @@ ion-button {
   color: #ffffff;
 }
 
+.lang-logo {
+  margin-top: 50px;
+}
+
 /* chat login page */
 
 .auth-title {
@@ -246,4 +250,33 @@ ion-button {
   border-top: 1px solid;
   width: 80%;
   border-color: #bcbcbc;
+}
+
+/* App Intro Page */
+.btn-app-intro {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1c345a;
+}
+
+.profile-description {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.auth-logo {
+  margin: 20px 0px 20px 0px;
+}
+
+/* Profile Login Page */
+.profile-login-bottom {
+  background: #ffffff;
+  border-radius: 25px 25px 0px 0px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  padding: 20px 0px;
 }

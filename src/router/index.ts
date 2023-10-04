@@ -11,6 +11,8 @@ import TurkishLang from '../pages/auth/TurkishLang.vue';
 import ChatLogin from '../pages/auth/ChatLogin.vue';
 import AppLogin from '../pages/auth/AppLogin.vue';
 import ChatSignUp from '../pages/auth/ChatSignUp.vue';
+import AppIntro from '../pages/auth/AppIntro.vue';
+import ProfileLogin from '../pages/auth/ProfileLogin.vue';
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -36,10 +38,21 @@ const routes: Array<RouteRecordRaw> = [
     component: ChatSignUp
   },
   {
+    path: '/auth/app-intro',
+    name: 'app-intro',
+    component: AppIntro
+  },
+  {
     path: '/auth/app-login',
     name: 'app-login',
     component: AppLogin
   },
+  {
+    path: '/auth/profile-login',
+    name: 'profile-login',
+    component: ProfileLogin
+  },
+
   //9. Student Profile
   {
     path: '/profile',
