@@ -135,7 +135,7 @@ html * {
 }
 
 /* Action sheet style */
-ion-select {
+.card-container ion-select {
   opacity: 0;
   margin-top: -50px;
   position: absolute;
