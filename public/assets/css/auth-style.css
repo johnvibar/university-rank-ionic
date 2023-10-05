@@ -6,6 +6,7 @@
   background-color: #1C345A;
   padding: 50px 0px 0px 0px;
   text-align: center;
+  align-items: center;
 }
 
 .auth-container {
@@ -29,7 +30,6 @@
 
 .img-arabic-letter {
   width: 214px;
-  height: 155.3px;
 }
 
 ion-button {
@@ -39,13 +39,15 @@ ion-button {
   border-radius: 10px;
   padding: 5px 0px;
   font-size: 20px;
+  width: 214px;
 }
 
 .lang-bottom {
+  width: 214px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 10%;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .lang-bottom ion-label {
@@ -68,10 +70,6 @@ ion-button {
   min-height: 30px !important;
   background-color: #1C345A;
   color: #ffffff;
-}
-
-.lang-logo {
-  margin-top: 50px;
 }
 
 /* chat login page */

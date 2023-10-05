@@ -8,12 +8,12 @@
           <ion-label class="footer-ion-label">Explore</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="chat" href="/chat">
+        <ion-tab-button tab="chat" href="/auth/chat-login">
           <ion-img src="/assets/img/icons/icon-footer-chat.svg" />
           <ion-label class="footer-ion-label">Chat</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="application" href="/application">
+        <ion-tab-button tab="application" href="/auth/app-login">
           <ion-img src="/assets/img/icons/icon-footer-application.svg" />
           <ion-label class="footer-ion-label">Application</ion-label>
         </ion-tab-button>

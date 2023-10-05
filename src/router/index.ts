@@ -18,13 +18,13 @@ import ProfileLogin from '../pages/auth/ProfileLogin.vue';
 const routes: Array<RouteRecordRaw> = [
 
   {
+    path: '',
+    redirect: '/auth/app-intro'
+  },
+  {
     path: '/auth',
     component: AuthTabs,
-    children: [
-      {
-        path: '',
-        redirect: '/auth/app-intro'
-      },
+    children: [      
       // 1. Login and Register pages
       {
         path: '/auth/chat-login',
@@ -40,13 +40,6 @@ const routes: Array<RouteRecordRaw> = [
         path: '/auth/profile-login',
         name: 'profile-login',
         component: ProfileLogin
-      },
-
-      //9. Student Profile
-      {
-        path: 'profile',
-        name: 'profile',
-        component: () => import('@/pages/Profile.vue'),
       },
     ]
   },
