@@ -34,7 +34,7 @@
                     <b>4</b> other countries.</ion-label>
                 </ion-card-content>
                 <ion-button fill="clear" class="btn-profile" id="edit-profile-modal">View or Edit The Profile</ion-button>
-                <ion-modal class="edit-profile-modal" trigger="edit-profile-modal" ref="modal" :initial-breakpoint="1"
+                <ion-modal class="edit-profile-modal" trigger="edit-profile-modal" ref="edit_profile_modal" :initial-breakpoint="1"
                   :breakpoints="[0, 1]">
                   <div class="edit-profile-modal-main">
                     <ion-text class="modal-title">Edit Profile</ion-text>
@@ -93,40 +93,40 @@
                           </ion-row>
                         </ion-grid>
                       </ion-item>
-                      <ion-modal class="reset-pwd-modal" trigger="reset-pwd-modal" ref="modal" :initial-breakpoint="1"
+                      <ion-modal class="reset-pwd-modal" trigger="reset-pwd-modal" ref="reset_pwd_modal" :initial-breakpoint="1"
                         :breakpoints="[0, 1]">
                         <div class="reset-pwd-modal-main">
                           <ion-text class="modal-title">Reset Password</ion-text><br /><br />
                           <ion-text class="modal-sub-title">Enter your new Password</ion-text><br />
                           <ion-card>
                             <ion-item>
-                              <ion-input placeholder="Current Password"></ion-input>
+                              <ion-input type="password" placeholder="Current Password"></ion-input>
                               <ion-img src="assets/img/icons/icon-eye.svg"></ion-img>
                             </ion-item>
                           </ion-card>
                           <ion-card>
                             <ion-item>
-                              <ion-input placeholder="New Password"></ion-input>
+                              <ion-input type="password" placeholder="New Password"></ion-input>
                               <ion-img src="assets/img/icons/icon-eye.svg"></ion-img>
                             </ion-item>
                           </ion-card>
                           <ion-card>
                             <ion-item>
-                              <ion-input placeholder="Confirm Password"></ion-input>
+                              <ion-input type="password" placeholder="Confirm Password"></ion-input>
                               <ion-img src="assets/img/icons/icon-eye.svg"></ion-img>
                             </ion-item>
                           </ion-card>
                         </div>
                         <div class="modal-upload-section">
-                          <ion-img src="assets/img/icons/icon-arrow-back.svg"></ion-img>
-                          <ion-button fill="clear" @click="dismiss()">Save</ion-button>
+                          <ion-img src="assets/img/icons/icon-arrow-back.svg" @click="reset_pwd_modal_dismiss()"></ion-img>
+                          <ion-button fill="clear">Save</ion-button>
                         </div>
                       </ion-modal>
                     </ion-card>
                   </div>
                   <div class="modal-upload-section">
-                    <ion-img src="assets/img/icons/icon-arrow-back.svg"></ion-img>
-                    <ion-button fill="clear" @click="dismiss()">Save</ion-button>
+                    <ion-img src="assets/img/icons/icon-arrow-back.svg" @click="edit_profile_modal_dismiss()"></ion-img>
+                    <ion-button fill="clear">Save</ion-button>
                   </div>
                 </ion-modal>
               </ion-list>
@@ -196,7 +196,7 @@
                 <ion-icon :icon="chevronForwardOutline" size="20"></ion-icon>
               </ion-col>
             </ion-row>
-            <ion-modal class="explore-profile-modal" trigger="open-modal-profile" ref="modal" :initial-breakpoint="1"
+            <ion-modal class="explore-profile-modal" trigger="open-modal-profile" ref="open_modal_profile" :initial-breakpoint="1"
               :breakpoints="[0, 1]">
               <div class="explore-profile-modal-main">
                 <ion-text class="modal-title">Complete Your Profile</ion-text>
@@ -223,7 +223,7 @@
                 <ion-button fill="clear" class="btn-profile-modal" expand="block">Start The Match Quiz</ion-button>
               </div>
               <div class="modal-back-section">
-                <ion-button fill="clear" @click="dismiss()">Back</ion-button>
+                <ion-button fill="clear" @click="open_modal_profile_dismiss()">Back</ion-button>
               </div>
             </ion-modal>
           </ion-grid>
@@ -322,11 +322,14 @@
                 <ion-card class="bookmarks-card">
                   <ion-label class="bookmarks-card-header">BS Software Engineering</ion-label>
                   <div class="bookmarks-card-main">
-                    <ion-img src="/assets/img/university-of-michig.png"></ion-img>
-                    <div class="bookmarks-card-center">
-                      <ion-label>University of Michigan</ion-label>
-                      <ion-label>Local #1 | Global #5 | Score 96.24</ion-label>
-                      <ion-label>United States of America</ion-label>
+                    <div style="display: flex">
+                      <ion-img src="/assets/img/university-of-michig.png"></ion-img>
+                      <div class="bookmarks-card-center">
+                        <ion-label>University of Michigan</ion-label>
+                        <ion-label>Local #1 | Global #5 | Score 96.24</ion-label>
+                        <ion-label>United States of America</ion-label>
+                      </div>
+
                     </div>
                     <div class="bookmarks-card-right">
                       <ion-icon :icon="chevronForwardOutline"></ion-icon>
@@ -399,18 +402,18 @@
                 <ion-row class="card-list">
                   <ion-img class="card-list-img" src="/assets/img/icons/icon-metro-language.svg"></ion-img>
                   <ion-label>Change Language</ion-label>
-                  <ion-select interface="action-sheet" label="language" :interface-options="{ header: ('Language') }"
-                    cancel-text="Back">
-                    <ion-select-option value="english">English</ion-select-option>
-                    <ion-select-option value="arabic">Arabic</ion-select-option>
-                    <ion-select-option value="turkish">Turkish</ion-select-option>
-                  </ion-select>
                 </ion-row>
               </ion-col>
               <ion-col size="1">
                 <ion-icon :icon="chevronForwardOutline" size="20"></ion-icon>
               </ion-col>
             </ion-row>
+            <ion-select interface="action-sheet" :interface-options="{ header: ('Language') }"
+              cancel-text="Back">
+              <ion-select-option value="english">English</ion-select-option>
+              <ion-select-option value="arabic">Arabic</ion-select-option>
+              <ion-select-option value="turkish">Turkish</ion-select-option>
+            </ion-select>
           </ion-grid>
 
 
@@ -420,17 +423,17 @@
                 <ion-row class="card-list">
                   <ion-img class="card-list-img" src="/assets/img/icons/icon-material-moneti.svg"></ion-img>
                   <ion-label>Change Currency</ion-label>
-                  <ion-select interface="action-sheet" label="currency" :interface-options="{ header: ('Currency') }"
-                    cancel-text="Back">
-                    <ion-select-option value="euro">Euro</ion-select-option>
-                    <ion-select-option value="dollar">U.S. dollar</ion-select-option>
-                  </ion-select>
                 </ion-row>
               </ion-col>
               <ion-col size="1">
                 <ion-icon :icon="chevronForwardOutline"></ion-icon>
               </ion-col>
             </ion-row>
+            <ion-select interface="action-sheet" label="currency" :interface-options="{ header: ('Currency') }"
+              cancel-text="Back">
+              <ion-select-option value="euro">Euro</ion-select-option>
+              <ion-select-option value="dollar">U.S. dollar</ion-select-option>
+            </ion-select>
           </ion-grid>
 
 
@@ -446,7 +449,7 @@
                 <ion-icon :icon="chevronForwardOutline"></ion-icon>
               </ion-col>
             </ion-row>
-            <ion-modal class="settings-modal" trigger="open-modal-settings" ref="modal" :initial-breakpoint="1"
+            <ion-modal class="settings-modal" trigger="open-modal-settings" ref="open_modal_settings" :initial-breakpoint="1"
               :breakpoints="[0, 1]">
               <div class="settings-modal-main">
                 <ion-text class="modal-title">Settings</ion-text>
@@ -464,8 +467,8 @@
               </div>
               <ion-label class="version-label">UNIRANKS APP Version 2.00</ion-label>
               <div class="modal-upload-section">
-                <ion-img src="assets/img/icons/icon-arrow-back.svg"></ion-img>
-                <ion-button fill="clear" @click="dismiss()">Upload</ion-button>
+                <ion-img src="assets/img/icons/icon-arrow-back.svg" @click="open_modal_settings_dismiss()"></ion-img>
+                <ion-button fill="clear">Upload</ion-button>
               </div>
             </ion-modal>
           </ion-grid>
@@ -513,14 +516,14 @@
         <div class="logout-label">
 
           <ion-label id="logout-modal"><b>Log Out</b></ion-label>
-          <ion-modal class="logout-modal" trigger="logout-modal" ref="modal" :initial-breakpoint="1"
+          <ion-modal class="logout-modal" trigger="logout-modal" ref="logout_modal" :initial-breakpoint="1"
             :breakpoints="[0, 1]">
             <div class="logout-modal-main">
               <ion-img src="assets/img/logout-image.svg"></ion-img>
               <ion-text>Are you sure you want to log out?</ion-text>
             </div>
             <div class="modal-logout-section">
-              <ion-button class="btn-cancel" fill="clear" @click="dismiss()">Cancel</ion-button>
+              <ion-button class="btn-cancel" fill="clear" @click="logout_modal_dismiss()">Cancel</ion-button>
               <ion-button fill="clear">Confirm</ion-button>
             </div>
           </ion-modal>
@@ -565,7 +568,16 @@ import {
 import { chevronForwardOutline, chevronBackOutline } from "ionicons/icons";
 import { ref } from 'vue';
 
-const modal = ref();
+const open_modal_profile = ref();
+const logout_modal = ref();
+const edit_profile_modal = ref();
+const reset_pwd_modal = ref();
+const open_modal_settings = ref();
 
-const dismiss = () => modal.value.$el.dismiss();
+const open_modal_profile_dismiss = () => open_modal_profile.value.$el.dismiss();
+const logout_modal_dismiss = () => logout_modal.value.$el.dismiss();
+const edit_profile_modal_dismiss = () => edit_profile_modal.value.$el.dismiss();
+const reset_pwd_modal_dismiss = () => reset_pwd_modal.value.$el.dismiss();
+const open_modal_settings_dismiss = () => open_modal_settings.value.$el.dismiss();
+
 </script>
