@@ -1,0 +1,662 @@
+html * {
+  font-family: "Calibri" !important;
+}
+
+#container {
+  padding: 10px;
+  background-color: #F5F5F5;
+  min-height: 100vh;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.card-container {
+  text-align: center;
+  border-radius: 25px;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+}
+
+/* Profile page style */
+.profile-header {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.profile-header-item {
+  --border-style: none;
+  margin-left: -16px;
+}
+
+.profile-header img {
+  width: 43px;
+  height: 43px
+}
+
+.profile-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-name b {
+  color: #203456;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.profile-bio {
+  color: #1C345A;
+  font-size: 20px;
+}
+
+.accordion-icon {
+  transform: rotate(270deg);
+  margin-top: 10px;
+}
+
+.btn-profile {
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: #1C345A;
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  text-transform: none;
+  --ripple-color: transparent;
+  --background-focused: #1C345A;
+}
+
+.profile-descrption {
+  text-align: left;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.card-list {
+  align-items: center;
+  height: 25px;
+}
+
+.card-list ion-img {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.card-list ion-label {
+  font-size: 16px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #BCBCBC;
+}
+
+.ion-align-items {
+  align-items: center;
+  color: #203456;
+  margin-left: 5px;
+}
+
+.ion-align-items p {
+  margin-left: 10px;
+  color: #203456;
+}
+
+.legal-card-container {
+  border-radius: 6px;
+  text-align: center;
+  padding: 5px 0px;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+}
+
+.legal-label {
+  margin: 20px 10px;
+  font-size: 20px;
+  color: #203456;
+}
+
+.card-list-img-legal {
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+.logout-label {
+  margin: 20px 10px 10px 10px;
+}
+
+.logout-label b {
+  font-size: 20px;
+  text-decoration: underline;
+  color: #203456;
+}
+
+/* Action sheet style */
+.card-container ion-select {
+  opacity: 0;
+  margin-top: -50px;
+  position: absolute;
+}
+
+ion-backdrop {
+  background-color: rgba(1, 1, 1, 0);
+}
+
+.action-sheet-group.sc-ion-action-sheet-md:first-child {
+  padding-bottom: 50px;
+  margin-bottom: -50px;
+}
+
+.action-sheet-title.sc-ion-action-sheet-md {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #1C345A;
+}
+
+.action-sheet-icon.sc-ion-action-sheet-md {
+  font-size: 20px;
+}
+
+.action-sheet-group.action-sheet-group-cancel {
+  background-color: #f5f5f5;
+  height: 80px;
+}
+
+.action-sheet-group.sc-ion-action-sheet-md {
+  border-radius: 25px 25px 0px 0px;
+}
+
+.action-sheet-selected.sc-ion-action-sheet-md span {
+  color: #00AEEF;
+  background-image: url("/assets/img/icons/icon-feather-check.png");
+  background-position-x: right;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.action-sheet-group.action-sheet-group-cancel button {
+  width: 40%;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 20px;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+  background: #f5f5f5;
+}
+
+.action-sheet-group.action-sheet-group-cancel span {
+  justify-content: center;
+}
+
+.action-sheet-selected.sc-ion-action-sheet-md {
+  font-size: 25px;
+}
+
+/* Explore Modal */
+.explore-profile-modal {
+  --border-radius: 25px 25px 0px 0px;
+}
+
+.explore-profile-modal-main {
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1c345a;
+}
+
+.explore-profile-modal-main p {
+  text-align: left;
+  font-size: 20px;
+  color: #1c345a;
+}
+
+.btn-profile-modal {
+  background: linear-gradient(-72deg, #436fb2 0.00%, #1c345a 100.00%);
+  border-radius: 15px;
+  color: #ffffff;
+  text-transform: none;
+  height: 50px;
+  font-size: 20px;
+}
+
+.modal-back-section {
+  border-radius: 25px 25px 0px 0px;
+  background: #f5f5f5;
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-back-section ion-img {
+  width: 11.4px;
+  height: 19px;
+}
+
+.modal-back-section ion-button {
+  width: 40%;
+  height: 50px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 20px;
+  background: #436fb2;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+  background: #f5f5f5;
+  color: #1c345a;
+  text-transform: none;
+}
+
+/* Settings Modal */
+.settings-modal {
+  --height: auto;
+  --border-radius: 25px 25px 0px 0px;
+}
+
+.settings-modal-main {
+  text-align: center;
+  padding: 20px 10px 0px 0px;
+  height: 260px;
+}
+
+.settings-modal ion-card {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.settings-modal ion-label {
+  font-size: 16px;
+  color: #203456;
+}
+
+.settings-modal p {
+  color: #FF0000;
+  float: left;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.version-label {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px !important;
+  color: #606060;
+}
+
+.modal-upload-section {
+  border-radius: 25px 25px 0px 0px;
+  background: #f5f5f5;
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-upload-section ion-img {
+  width: 11.4px;
+  height: 19px;
+}
+
+.modal-upload-section ion-button {
+  width: 70%;
+  height: 50px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 20px;
+  background: #436fb2;
+  background: linear-gradient(-72deg, #436fb2 0.00%, #1c345a 100.00%);
+  color: #ffffff;
+  text-transform: none;
+}
+
+.settings-modal .ion-overlay-wrapper {
+  border-radius: 25px 25px 0px 0px;
+}
+
+/* Edit Profile modal */
+.edit-profile-modal {
+  --border-radius: 25px 25px 0px 0px;
+}
+
+.edit-profile-modal-main {
+  height: 100%;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.edit-profile-modal-main ion-card {
+  border-radius: 15px;
+}
+
+.edit-profile-modal-main ion-input {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.edit-profile-modal-main ion-item {
+  --padding-start: 0px;
+}
+
+.edit-profile-modal-main ion-label p {
+  margin-left: 10px;
+  color: #606060;
+  font-size: 16px;
+}
+
+.edit-profile-modal-main ion-checkbox {
+  padding-left: 10px;
+  margin-top: 10px;
+  display: flex;
+  color: #606060;
+}
+
+.edit-profile-modal-main ion-label span {
+  margin-left: 10px;
+  color: #00AEEF;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.edit-profile-modal-main ion-button {
+  border-radius: 15px;
+  background: #1c345a;
+  color: #ffffff;
+  text-transform: none;
+}
+
+.modal-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1c345a;
+}
+
+.edit-profile-modal-main p {
+  text-align: left;
+  font-size: 20px;
+  color: #1c345a;
+}
+
+.edit-profile-modal-main ion-item ion-input {
+  margin-left: 20px;
+}
+
+.edit-profile-modal-main ion-item ion-img {
+  margin-left: 20px;
+}
+
+.edit-profile-modal-main ion-item ion-label {
+  margin-left: 5px;
+}
+
+/* Reset Password */
+.reset-pwd-modal {
+  --height: auto;
+  --border-radius: 25px 25px 0px 0px;
+}
+
+.reset-pwd-modal-main {
+  text-align: center;
+  padding: 30px 0px 0px 0px;
+  height: 340px;
+}
+
+.reset-pwd-modal-main ion-text {
+  margin-top: 20px;
+  color: #1c345a;
+}
+
+.reset-pwd-modal-main ion-card {
+  border-radius: 10px;
+  border-color: #bcbcbc;
+}
+
+/* logout modal */
+.logout-modal {
+  --height: auto;
+  --border-radius: 25px 25px 0px 0px;
+  text-align: center;
+}
+
+.logout-modal-main {
+  padding: 30px 0px 0px 0px;
+  height: 504px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-modal-main ion-img {
+  width: 210.6px;
+  height: 300.1px;
+}
+
+.logout-modal-main ion-text {
+  font-size: 30px;
+  width: 60%;
+  font-size: 30px;
+  font-weight: bold;
+  color: #1c345a;
+}
+
+.modal-logout-section {
+  border-radius: 25px 25px 0px 0px;
+  background: #f5f5f5;
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-logout-section ion-button {
+  width: 40%;
+  height: 50px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 20px;
+  background: #436fb2;
+  background: linear-gradient(-72deg, #436fb2 0.00%, #1c345a 100.00%);
+  color: #ffffff;
+  text-transform: none;
+}
+
+.modal-logout-section .btn-cancel {
+  background: #f5f5f5;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+  color: #FF0000;
+}
+
+/* Bookmarks modal */
+.bookmarks-modal-header ion-title {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: left;
+  color: #1c345a;
+}
+
+.bookmarks-modal-header ion-text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+  color: #606060;
+}
+
+.bookmarks-modal {
+  --border-radius: 25px 25px 0px 0px;
+  text-align: center;
+}
+
+.bookmarks-modal-main {
+  padding: 30px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookmarks-modal-main ion-img {
+  width: 237.2px;
+  height: 266.3px;
+}
+
+.bookmarks-modal-main ion-text {
+  font-size: 30px;
+  width: 70%;
+  color: #606060;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.bookmarks-modal-main ion-text span {
+  color: #606060;
+  font-size: 16px;
+  float: left;
+  padding: 20px;
+}
+
+.bookmarks-card {
+  padding: 5px 10px 15px 10px;
+  text-align: left;
+  width: 95%;
+}
+
+.bookmarks-card-header {
+  font-size: 16px;
+  font-weight: bold;
+  color: #203456;
+}
+
+.bookmarks-card-main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.bookmarks-card-center {
+  display: grid;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.bookmarks-card-center {
+  color: #203456;
+}
+
+.bookmarks-card-center ion-label:last-child {
+  color: #606060;
+}
+
+.bookmarks-card-right {
+  display: grid;
+  align-items: self-end;
+  justify-items: end;
+}
+
+.bookmarks-card-right ion-icon {
+  margin-top: -20px;
+}
+
+.bookmarks-card-right ion-label {
+  color: #007A00;
+}
+
+.bookmarks-section {
+  border-radius: 25px 25px 0px 0px;
+  background: #f5f5f5;
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookmarks-section ion-button {
+  width: 90%;
+  height: 50px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 20px;
+  background: #436fb2;
+  background: linear-gradient(-72deg, #436fb2 0.00%, #1c345a 100.00%);
+  color: #ffffff;
+  text-transform: none;
+}
+
+.bookmarks-card ion-img {
+  width: 50px;
+  height: 50.6px;
+}
+
+/* Footer Tabs style */
+.auth-tabs ion-tabs {
+  background-color: #1C345A;
+}
+
+.auth-tabs ion-tab-bar {
+  border-radius: 25px 25px 0px 0px;
+}
+
+.auth-tabs ion-tab-button {
+  background: #ffffff !important;
+}
+
+.auth-tabs .footer-ion-label {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.auth-tabs .footer-ion-label {
+  color: #1C345A;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.auth-tabs .footer-ion-label-selected {
+  color: #00AEEF;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.main-tabs ion-tabs {
+  background-color: #F5F5F5;
+}
+
+.main-tabs ion-tab-bar {
+  border-radius: 25px 25px 0px 0px;
+}
+
+.main-tabs ion-tab-button {
+  background: #1C345A!important;
+}
+
+.main-tabs .footer-ion-label {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.main-tabs .footer-ion-label-selected {
+  color: #00AEEF;
+  font-size: 16px;
+  font-weight: 300;
+}

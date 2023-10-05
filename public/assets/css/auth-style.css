@@ -1,0 +1,276 @@
+.lang-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #1C345A;
+  padding: 50px 0px 0px 0px;
+  text-align: center;
+  align-items: center;
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #1C345A;
+  padding: 50px 10px 0px 10px;
+  text-align: center;
+  align-items: center;
+}
+
+/* language setting page */
+
+.lang-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+ion-button {
+  margin-top: 20px;
+  color: #1C345A;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px 0px;
+  font-size: 20px;
+}
+
+.lang-bottom {
+  width: 214px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.lang-bottom ion-label {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.lang-bottom ion-item {
+  --padding-start: 0px;
+  --inner-padding-end: 0px;
+  --min-height: 30px !important;
+  --inner-border-width: 0 0 0px 0;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+}
+
+.lang-bottom ion-select {
+  opacity: 1 !important;
+  min-height: 30px !important;
+  background-color: #1C345A;
+  color: #ffffff;
+}
+
+/* chat login page */
+
+.auth-title {
+  font-size: 37px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.auth-description {
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  padding: 0px 10px;
+}
+
+.auth-sub-description {
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+}
+
+.btn-login {
+  margin-top: 50px;
+  color: #ffffff;
+  background: #00aeef;
+  border-radius: 15px;
+  padding: 5px 30px;
+  font-size: 20px;
+  text-transform: none;
+  max-width: 300px;
+}
+
+.login-modal {
+  --height: auto;
+  --border-radius: 25px 25px 0px 0px;
+}
+
+.login-modal-main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 10px 0px 10px;
+  height: 400px;
+}
+
+.login-modal-main ion-item {
+  --inner-border-width: 0 0 0px 0;
+}
+
+.login-modal-main ion-card {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.login-modal-main ion-text {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: #606060;
+}
+
+.login-modal-description {
+  padding: 0px 30px;
+  --inner-border-width: 0 0 0px 0;
+}
+
+.login-modal-description ion-text {
+  font-size: 20px !important;
+  font-weight: 300;
+  text-align: center;
+  color: #606060 !important;
+}
+
+.btn-continue {
+  border-radius: 15px;
+  color: #ffffff;
+  background: #00aeef;
+  text-transform: none;
+  margin: 20px 30px;
+  width: 80%;
+}
+
+.divider {
+  width: 100%;
+}
+
+.divider hr {
+  border-top: 1px solid #bcbcbc;
+  width: 40%;
+}
+
+.btn-google-login {
+  font-size: 20px;
+  background-color: #1C345A;
+  border-radius: 15px;
+  color: #ffffff;
+  text-transform: none;
+  margin: 20px 30px;
+  background-image: url('../../assets/img/auth/icon-google.svg');
+  background-repeat: no-repeat;
+  background-position-y: 10px;
+  background-position-x: 10%;
+  width: 80%;
+}
+
+.login-pwd-modal-main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 10px 0px 10px;
+  height: 500px;
+}
+
+.login-pwd-modal-main ion-item {
+  --inner-border-width: 0 0 0px 0;
+}
+
+.login-pwd-modal-main ion-card {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.login-pwd-modal-main ion-text {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: #606060;
+}
+
+/* Chat Signup page */
+.chat-signup-title {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #203456;
+}
+
+.signup-modal {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.signup-modal ion-title {
+  font-size: 26px;
+  color: #203456;
+  font-weight: bold;
+}
+
+.signup-modal ion-card {
+  border-radius: 15px;
+  border: 1px solid #7fc4fd;
+}
+
+.signup-modal ion-icon {
+  transform: rotate(180deg);
+}
+
+.signup-modal ion-item {
+  --inner-border-width: 0 0 0px 0;
+  color: #1C345A;
+}
+
+.signup-modal hr {
+  border-top: 1px solid;
+  width: 80%;
+  border-color: #bcbcbc;
+}
+
+/* App Intro Page */
+.btn-app-intro {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1c345a;
+}
+
+.profile-description {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.auth-logo {
+  margin: 20px 0px 20px 0px;
+}
+
+/* Profile Login Page */
+.profile-login-bottom {
+  background: #ffffff;
+  border-radius: 25px 25px 0px 0px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  padding: 20px 0px;
+}

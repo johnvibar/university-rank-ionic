@@ -1,0 +1,7 @@
+{
+  "name": "uni-rank",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
