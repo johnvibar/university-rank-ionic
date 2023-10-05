@@ -39,7 +39,6 @@ ion-button {
   border-radius: 10px;
   padding: 5px 0px;
   font-size: 20px;
-  width: 214px;
 }
 
 .lang-bottom {
@@ -86,6 +85,7 @@ ion-button {
   font-size: 20px;
   text-align: center;
   color: #ffffff;
+  padding: 0px 10px;
 }
 
 .auth-sub-description {

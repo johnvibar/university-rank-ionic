@@ -602,7 +602,7 @@ ion-backdrop {
   height: 50.6px;
 }
 
-/* Footer style */
+/* Footer Tabs style */
 .auth-tabs ion-tabs {
   background-color: #1C345A;
 }
@@ -623,6 +623,12 @@ ion-backdrop {
 
 .auth-tabs .footer-ion-label {
   color: #1C345A;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.auth-tabs .footer-ion-label-selected {
+  color: #00AEEF;
   font-size: 16px;
   font-weight: 300;
 }

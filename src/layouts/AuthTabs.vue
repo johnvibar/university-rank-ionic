@@ -9,20 +9,19 @@
         </ion-tab-button>
 
         <ion-tab-button tab="chat" href="/auth/chat-login">
-          <ion-img src="/assets/img/auth/icons/icon-footer-chat.svg" />
-          <ion-label class="footer-ion-label">Chat</ion-label>
+          <ion-img :src="chatTabIcon" />
+          <ion-label :class="chatTabLabel">chat</ion-label>
         </ion-tab-button>
 
         <ion-tab-button tab="application" href="/auth/app-login">
-          <ion-img src="/assets/img/auth/icons/icon-footer-application.svg" />
-          <ion-label class="footer-ion-label">Application</ion-label>
+          <ion-img :src="appTabIcon" />
+          <ion-label :class="appTabLabel">Application</ion-label>
         </ion-tab-button>
 
         <ion-tab-button tab="profile" href="/profile">
           <ion-img src="/assets/img/auth/icons/icon-footer-profile.svg" />
           <ion-label class="footer-ion-label">Profile</ion-label>
         </ion-tab-button>
-
       </ion-tab-bar>
     </ion-tabs>
 
@@ -38,6 +37,20 @@ export default {
   setup() {
     return {
     }
+  },
+  computed: {
+    chatTabIcon() {
+      return this.$route.path.includes('chat') ? '/assets/img/auth/icons/icon-footer-chat-selected.svg' : '/assets/img/auth/icons/icon-footer-chat.svg';
+    },
+    chatTabLabel() {
+      return this.$route.path.includes('chat') ? 'footer-ion-label-selected' : 'footer-ion-label';
+    },
+    appTabIcon() {
+      return this.$route.path.includes('app') ? '/assets/img/auth/icons/icon-footer-app-selected.svg' : '/assets/img/auth/icons/icon-footer-app.svg';
+    },
+    appTabLabel() {
+      return this.$route.path.includes('app') ? 'footer-ion-label-selected' : 'footer-ion-label';
+    },
   }
 }
 </script>
