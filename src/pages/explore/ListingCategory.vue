@@ -17,7 +17,7 @@
         <div class="search-results">
           <ion-label class="search-results-label">Elite Universites 425</ion-label>
           <ion-card class="search-results-card" style="position: relative;">
-            <ion-label class="search-results-header">BS Software Engineering</ion-label>
+            
             <div class="search-results-main">
               <div style="display: flex">
                 <ion-img src="/assets/img/university-of-michig.png"></ion-img>
@@ -34,7 +34,7 @@
             </div>
           </ion-card>
           <ion-card class="search-results-card" style="position: relative;">
-            <ion-label class="search-results-header">BS Software Engineering</ion-label>
+            
             <div class="search-results-main">
               <div style="display: flex">
                 <ion-img src="/assets/img/university-of-michig.png"></ion-img>
@@ -51,7 +51,7 @@
             </div>
           </ion-card>
           <ion-card class="search-results-card" style="position: relative;">
-            <ion-label class="search-results-header">BS Software Engineering</ion-label>
+            
             <div class="search-results-main">
               <div style="display: flex">
                 <ion-img src="/assets/img/university-of-michig.png"></ion-img>
@@ -68,7 +68,7 @@
             </div>
           </ion-card>
           <ion-card class="search-results-card" style="position: relative;">
-            <ion-label class="search-results-header">BS Software Engineering</ion-label>
+            
             <div class="search-results-main">
               <div style="display: flex">
                 <ion-img src="/assets/img/university-of-michig.png"></ion-img>
@@ -85,7 +85,7 @@
             </div>
           </ion-card>
           <ion-card class="search-results-card" style="position: relative;">
-            <ion-label class="search-results-header">BS Software Engineering</ion-label>
+            
             <div class="search-results-main">
               <div style="display: flex">
                 <ion-img src="/assets/img/university-of-michig.png"></ion-img>
@@ -102,7 +102,7 @@
             </div>
           </ion-card>
           <ion-card class="search-results-card" style="position: relative;">
-            <ion-label class="search-results-header">BS Software Engineering</ion-label>
+            
             <div class="search-results-main">
               <div style="display: flex">
                 <ion-img src="/assets/img/university-of-michig.png"></ion-img>
@@ -119,7 +119,7 @@
             </div>
           </ion-card>
           <ion-card class="search-results-card" style="position: relative;">
-            <ion-label class="search-results-header">BS Software Engineering</ion-label>
+            
             <div class="search-results-main">
               <div style="display: flex">
                 <ion-img src="/assets/img/university-of-michig.png"></ion-img>
@@ -146,6 +146,12 @@
 import {
   IonPage,
   IonContent,
+  IonLabel,
+  IonItem,
+  IonRow,
+  IonImg,
+  IonIcon,
+  IonCard,
 } from '@ionic/vue';
 
 import ExploreHeader from '../../components/ExploreHeader.vue';

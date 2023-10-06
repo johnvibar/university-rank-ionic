@@ -48,6 +48,7 @@
 
 ion-item {
   --inner-border-width: 0 0 0px 0;
+  --min-height: 0px;
 }
 
 .explore-title {
@@ -60,6 +61,7 @@ ion-item {
   font-size: 20px;
   font-weight: bold;
   color: #1c345a;
+  font-weight: bold;
 }
 
 ion-card {
@@ -99,7 +101,7 @@ ion-card {
 }
 
 .search-results-card {
-  padding: 5px;
+  padding: 10px;
   text-align: left;
   margin-inline: 0px;
 }
@@ -143,3 +145,56 @@ ion-card {
 .search-results-right ion-label {
   color: #007A00;
 }
+
+.recent-searches-card ion-item {
+  --inner-padding-end: 0px;
+}
+
+.recent-searches-title {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.recent-searches-title ion-label {
+  font-size: 20px;
+  color: #606060;
+}
+
+.recent-searches-expand {
+  font-size: 16px !important;
+  color: #1c345a !important;
+}
+
+.recent-searches-card {
+  margin-inline: 0px;
+}
+
+.recent-searches-card ion-label {
+  font-size: 16px !important;
+  color: #203456 !important;
+  margin-left: 10px;
+}
+
+.recommended-pro-card {
+  margin-inline: 0px;
+}
+
+.recommended-pro-card ion-item {
+  --inner-padding-end: 0px;
+}
+
+.recommended-pro-card-title {
+  margin-bottom: -10px;
+}
+
+.recommended-pro-card-title ion-label {
+  font-size: 16px !important;
+  color: #203456 !important;
+  font-weight: bold;
+}
+
+.recommended-pro-card ion-label {
+  font-size: 16px !important;
+  color: #203456 !important;
+}
+

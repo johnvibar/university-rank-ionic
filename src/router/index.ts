@@ -22,6 +22,7 @@ import Profile from '../pages/Profile.vue';
 // 4. Explore Results pages
 import ExploreHome from '../pages/explore/Home.vue';
 import ListingCategory from '../pages/explore/ListingCategory.vue';
+import RecentSearches from '../pages/explore/RecentSearches.vue';
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -102,6 +103,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/explore/listing-category',
     name: 'listing-category',
     component: ListingCategory
+  },
+  {
+    path: '/explore/recent-searches',
+    name: 'recent-searches',
+    component: RecentSearches
   },
 ]
 
