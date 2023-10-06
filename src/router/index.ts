@@ -23,6 +23,7 @@ import Profile from '../pages/Profile.vue';
 import ExploreHome from '../pages/explore/Home.vue';
 import ListingCategory from '../pages/explore/ListingCategory.vue';
 import RecentSearches from '../pages/explore/RecentSearches.vue';
+import NothingFound from '../pages/explore/NothingFound.vue';
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -108,6 +109,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/explore/recent-searches',
     name: 'recent-searches',
     component: RecentSearches
+  },
+  {
+    path: '/explore/nothing-found',
+    name: 'nothing-found',
+    component: NothingFound
   },
 ]
 

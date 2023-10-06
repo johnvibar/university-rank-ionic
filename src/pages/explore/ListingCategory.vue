@@ -135,6 +135,24 @@
               </div>
             </div>
           </ion-card>
+
+          <ion-card class="search-results-card" style="position: relative;">
+            
+            <div class="search-results-main">
+              <div style="display: flex">
+                <ion-img src="/assets/img/university-of-michig.png"></ion-img>
+                <div class="search-results-center">
+                  <ion-label>University of Michigan</ion-label>
+                  <ion-label>Local #1 | Global #5 | Score 96.24</ion-label>
+                  <ion-label>United States of America</ion-label>
+                </div>
+              </div>
+              <div class="search-results-right">
+                <ion-icon :icon="chevronForwardOutline"></ion-icon>
+                <ion-label>Recognized in Jordan</ion-label>
+              </div>
+            </div>
+          </ion-card>
         </div>
       </div>
     </ion-content>

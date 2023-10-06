@@ -198,3 +198,25 @@ ion-card {
   color: #203456 !important;
 }
 
+/* Nothing Found Page Style */
+.nothing-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.nothing-title {
+  padding: 60px 60px 0px 60px;
+  font-size: 37px;
+  font-weight: bold;
+  text-align: center;
+  color: #1c345a;
+}
+
+.nothing-description {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: #1c345a;
+}
