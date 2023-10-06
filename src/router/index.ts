@@ -4,8 +4,8 @@ import { RouteRecordRaw } from 'vue-router';
 import '../../public/assets/css/auth-style.css';
 import '../../public/assets/css/style.css';
 
-import Tabs from '../layouts/Tabs.vue';
-import AuthTabs from '../layouts/AuthTabs.vue';
+import Tabs from '../components/Tabs.vue';
+import AuthTabs from '../components/AuthTabs.vue';
 
 // 1. Login and Register pages
 import ArabicLang from '../pages/auth/ArabicLang.vue';
@@ -21,6 +21,7 @@ import Profile from '../pages/Profile.vue';
 
 // 4. Explore Results pages
 import ExploreHome from '../pages/explore/Home.vue';
+import ListingCategory from '../pages/explore/ListingCategory.vue';
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -94,6 +95,13 @@ const routes: Array<RouteRecordRaw> = [
     path: '/auth/app-intro',
     name: 'app-intro',
     component: AppIntro
+  },
+
+  // 4. Explore Result
+  {
+    path: '/explore/listing-category',
+    name: 'listing-category',
+    component: ListingCategory
   },
 ]
 

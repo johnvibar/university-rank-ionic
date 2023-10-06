@@ -73,10 +73,17 @@ import {
   IonImg,
   IonIcon,
   IonText,
+  IonCard,
+  IonCardTitle,
+  IonCardContent,
+  IonCardHeader,
+  IonGrid,
+  IonCol,
+  IonRow,
 } from "@ionic/vue";
 
 import '../../../public/assets/css/explore-style.css';
-import ExploreHeader from '../../layouts/ExploreHeader.vue';
+import ExploreHeader from '../../components/ExploreHeader.vue';
 import { chevronForwardOutline } from "ionicons/icons";
 
 </script>
