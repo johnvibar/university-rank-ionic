@@ -3,9 +3,9 @@
     <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="explore" href="/explore">
-          <ion-img src="/assets/img/icons/footer/icon-footer-explore.svg" />
-          <ion-label class="footer-ion-label">Explore</ion-label>
+        <ion-tab-button tab="explore" href="/explore/home">
+          <ion-img :src="ExploreTabIcon" />
+          <ion-label :class="ExploreTabLabel">Explore</ion-label>
         </ion-tab-button>
 
         <ion-tab-button tab="chat" href="/auth/chat-login">
@@ -43,6 +43,12 @@ export default {
     },
     profileTabLabel() {
       return this.$route.path.includes('profile') ? 'footer-ion-label-selected' : 'footer-ion-label';
+    },
+    ExploreTabIcon() {
+      return this.$route.path.includes('explore') ? '/assets/img/icons/footer/icon-footer-explore-selected.svg' : '/assets/img/icons/footer/icon-footer-explore.svg';
+    },
+    ExploreTabLabel() {
+      return this.$route.path.includes('explore') ? 'footer-ion-label-selected' : 'footer-ion-label';
     },
   }
 }

@@ -1,0 +1,38 @@
+/* Explore Header style */
+.explore-header {
+  background-color: #1C345A;
+  padding: 20px 5px 5px 5px;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.explore-header ion-searchbar {
+  margin-top: 10px;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.explore-header .searchbar-input.sc-ion-searchbar-md {
+  border-radius: 15px;
+}
+
+/* Explore Home page */
+ion-item {
+  --inner-border-width: 0 0 0px 0;
+}
+
+.explore-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1c345a;
+}
+
+.explore-subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1c345a;
+}
+
+ion-card {
+  border-radius: 10px;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+  background: #ffffff
+}

@@ -3,7 +3,7 @@
     <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="explore" href="/explore">
+        <ion-tab-button tab="explore" href="/explore/home">
           <ion-img src="/assets/img/auth/icons/icon-footer-explore.svg" />
           <ion-label class="footer-ion-label">Explore</ion-label>
         </ion-tab-button>

@@ -3,6 +3,7 @@ import { RouteRecordRaw } from 'vue-router';
 
 import '../../public/assets/css/auth-style.css';
 import '../../public/assets/css/style.css';
+
 import Tabs from '../layouts/Tabs.vue';
 import AuthTabs from '../layouts/AuthTabs.vue';
 
@@ -15,12 +16,20 @@ import ChatSignUp from '../pages/auth/ChatSignUp.vue';
 import AppIntro from '../pages/auth/AppIntro.vue';
 import ProfileLogin from '../pages/auth/ProfileLogin.vue';
 
+// 2. Student Profile pages
+import Profile from '../pages/Profile.vue';
+
+// 4. Explore Results pages
+import ExploreHome from '../pages/explore/Home.vue';
+
 const routes: Array<RouteRecordRaw> = [
 
   {
     path: '',
     redirect: '/auth/app-intro'
   },
+
+  // AuthTabs Children pages
   {
     path: '/auth',
     component: AuthTabs,
@@ -44,6 +53,7 @@ const routes: Array<RouteRecordRaw> = [
     ]
   },
 
+  // AuthTab Children pages
   {
     path: '/',
     component: Tabs,
@@ -51,13 +61,19 @@ const routes: Array<RouteRecordRaw> = [
       
       //9. Student Profile
       {
-        path: 'profile',
+        path: '/profile',
         name: 'profile',
-        component: () => import('@/pages/Profile.vue'),
+        component: Profile
+      },
+      {
+        path: '/explore/home',
+        name: 'exploreHome',
+        component: ExploreHome,
       },
     ]
   },
 
+  // Without Tabs
   // 1. Login and Register pages  
   {
     path: '/auth/arabic-lang',
@@ -79,8 +95,6 @@ const routes: Array<RouteRecordRaw> = [
     name: 'app-intro',
     component: AppIntro
   },
-  
-  
 ]
 
 const router = createRouter({
