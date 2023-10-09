@@ -24,6 +24,7 @@ import ExploreHome from '../pages/explore/ExploreHome.vue';
 import ListingCategory from '../pages/explore/ListingCategory.vue';
 import RecentSearches from '../pages/explore/RecentSearches.vue';
 import NothingFound from '../pages/explore/NothingFound.vue';
+import SearchResult from '../pages/explore/SearchResult.vue';
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -114,6 +115,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/explore/nothing-found',
     name: 'nothing-found',
     component: NothingFound
+  },
+  {
+    path: '/explore/search-result',
+    name: 'search-result',
+    component: SearchResult
   },
 ]
 
