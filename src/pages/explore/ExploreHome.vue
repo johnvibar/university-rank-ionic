@@ -10,11 +10,25 @@
         <ion-icon :icon="chevronForwardOutline"></ion-icon>
       </ion-item>
 
+      <ion-grid>
+        <ion-row>
+          <ExploreSlider1 />
+          <ExploreSlider1 />
+        </ion-row>
+      </ion-grid>
+
       <ion-item>
         <ion-img src="../../../public/assets/img/explore/student-hat.png"></ion-img>
         <ion-title class="explore-subtitle">Programs | <ion-text>52,300</ion-text></ion-title>
         <ion-icon :icon="chevronForwardOutline"></ion-icon>
       </ion-item>
+
+      <ion-grid>
+        <ion-row>
+          <ExploreSlider2 />
+          <ExploreSlider2 />
+        </ion-row>
+      </ion-grid>
 
       <ion-title class="explore-title">Your Unique Adventure</ion-title>
       <ion-grid>
@@ -33,7 +47,7 @@
                 <ion-card-title>Unlocking the Secrets</ion-card-title>
               </ion-card-header>
               <ion-card-content>to a Successful Study Abroad Experience</ion-card-content>
-            </ion-card>            
+            </ion-card>
           </ion-col>
           <ion-col>
             <ion-card>
@@ -84,6 +98,8 @@ import {
 
 import '../../../public/assets/css/explore-style.css';
 import ExploreHeader from '../../components/ExploreHeader.vue';
+import ExploreSlider1 from '../../components/ExploreSlider1.vue';
+import ExploreSlider2 from '../../components/ExploreSlider2.vue';
 import { chevronForwardOutline } from "ionicons/icons";
 
 </script>

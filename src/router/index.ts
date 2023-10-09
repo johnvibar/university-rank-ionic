@@ -20,7 +20,7 @@ import ProfileLogin from '../pages/auth/ProfileLogin.vue';
 import Profile from '../pages/Profile.vue';
 
 // 4. Explore Results pages
-import ExploreHome from '../pages/explore/Home.vue';
+import ExploreHome from '../pages/explore/ExploreHome.vue';
 import ListingCategory from '../pages/explore/ListingCategory.vue';
 import RecentSearches from '../pages/explore/RecentSearches.vue';
 import NothingFound from '../pages/explore/NothingFound.vue';

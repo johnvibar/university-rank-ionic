@@ -198,6 +198,53 @@ ion-card {
   color: #203456 !important;
 }
 
+ion-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1c345a;
+}
+
+ion-card-content {
+  font-size: 16px;
+  color: #606060;
+}
+
+ion-card ion-item {
+  --inner-border-width: 0 0 1px 0;
+}
+
+ion-card ion-label h4 {
+  font-size: 12px;
+  font-weight: 300;
+  color: #203456;
+  margin-left: 5px !important;
+}
+
+ion-card ion-label h2 {
+  font-size: 16px;
+  color: #203456;
+}
+
+ion-card ion-label h6 {
+  font-size: 12px;
+  color: #606060;
+}
+
+ion-card ion-label h3 {
+  font-size: 12px;
+  color: #007a00;
+}
+
+.program-card-footer {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.program-card-footer h1 {
+  font-size: 18px;
+  color: #606060;
+}
+
 /* Nothing Found Page Style */
 .nothing-found {
   display: flex;
