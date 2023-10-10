@@ -28,6 +28,7 @@ import SearchResult from '../pages/explore/SearchResult.vue';
 import SearchResultPrograms from '../pages/explore/SearchResultPrograms.vue';
 import SearchResultProgramsList from '../pages/explore/SearchResultProgramsList.vue';
 import SearchResultInstitutions from '../pages/explore/SearchResultInstitutions.vue';
+import SearchResultProInst from '../pages/explore/SearchResultProInst.vue';
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -138,6 +139,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/explore/search-result-institutions',
     name: 'search-result-institutions',
     component: SearchResultInstitutions
+  },
+  {
+    path: '/explore/search-result-pro-inst',
+    name: 'search-result-pro-inst',
+    component: SearchResultProInst
   },
 ]
 
