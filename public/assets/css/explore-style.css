@@ -139,12 +139,9 @@ ion-card {
   justify-items: end;
 }
 
-.search-results-right ion-icon {
-  margin-top: -20px;
-}
-
 .search-results-right ion-label {
   color: #007A00;
+  margin-top: 10px;
 }
 
 .recent-searches-card ion-item {
@@ -267,4 +264,9 @@ ion-card ion-label h3 {
   font-size: 20px;
   text-align: center;
   color: #1c345a;
+}
+
+.search-result-institutions {
+  font-size: 16px;
+  color: #00aeef;
 }
