@@ -1,13 +1,20 @@
 <template>
-  <ion-title>BS Software Engineering</ion-title>
-  <hr />
-  <ion-img src="/assets/img/university-of-michig.png"></ion-img>
-  <ion-label>King Abdullah University of Science & Technology...</ion-label>
+  <div class="pro-detail-title">
+    <ion-label>BS Software Engineering</ion-label>
+    <hr />
+  </div>
+  <ion-row class="pro-detail-uni">
+    <ion-img src="/assets/img/university-of-michig.png"></ion-img>
+    <ion-label>King Abdullah University of Science & Technology...</ion-label>
+  </ion-row>
 
   <ion-card class="card-container">
     <ion-grid class="border-bottom">
       <ion-row>
-        <ion-img class="card-list-img" src="/assets/img/explore/icon-awesome-money-card.png"></ion-img>
+        <div class="pro-detail-img">
+          <ion-img class="card-list-img" src="/assets/img/explore/icon-awesome-money-card.png"></ion-img>
+
+        </div>
         <ion-label>
           <h2>USD 31,449 per year</h2>
           <p>International student tuition fee</p>
@@ -17,7 +24,10 @@
 
     <ion-grid class="border-bottom">
       <ion-row>
-        <ion-img class="card-list-img" src="/assets/img/explore/icon-awesome-calenda.png"></ion-img>
+        <div class="pro-detail-img">
+          <ion-img class="card-list-img" src="/assets/img/explore/icon-awesome-calenda.png"></ion-img>
+
+        </div>
         <ion-label>
           <h2>August 2023</h2>
           <p>Start date</p>
@@ -27,7 +37,10 @@
 
     <ion-grid class="border-bottom">
       <ion-row>
-        <ion-img class="card-list-img" src="/assets/img/explore/icon-awesome-hourgla.png"></ion-img>
+        <div class="pro-detail-img">
+          <ion-img class="card-list-img" src="/assets/img/explore/icon-awesome-hourgla.png"></ion-img>
+
+        </div>
         <ion-label>
           <h2>Jul 2023</h2>
           <p>Application deadline</p>
