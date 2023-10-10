@@ -26,6 +26,7 @@ import RecentSearches from '../pages/explore/RecentSearches.vue';
 import NothingFound from '../pages/explore/NothingFound.vue';
 import SearchResult from '../pages/explore/SearchResult.vue';
 import SearchResultPrograms from '../pages/explore/SearchResultPrograms.vue';
+import SearchResultProgramsList from '../pages/explore/SearchResultProgramsList.vue';
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -126,6 +127,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/explore/search-result-programs',
     name: 'search-result-programs',
     component: SearchResultPrograms
+  },
+  {
+    path: '/explore/search-result-programs-list',
+    name: 'search-result-programs',
+    component: SearchResultProgramsList
   },
 ]
 

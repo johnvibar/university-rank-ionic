@@ -115,6 +115,7 @@ ion-card {
 .search-results-main {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 5px;
 }
 
