@@ -28,7 +28,7 @@
                 </div>
               </div>
               <div class="search-results-right">
-                <ion-icon :icon="chevronForwardOutline"></ion-icon>
+                <ion-icon :icon="chevronForwardOutline" id="program-detail-modal"></ion-icon>
                 <ion-label>Recognized in Jordan</ion-label>
               </div>
             </div>
@@ -45,7 +45,7 @@
                 </div>
               </div>
               <div class="search-results-right">
-                <ion-icon :icon="chevronForwardOutline"></ion-icon>
+                <ion-icon :icon="chevronForwardOutline" id="program-detail-modal"></ion-icon>
                 <ion-label>Recognized in Jordan</ion-label>
               </div>
             </div>
@@ -62,11 +62,15 @@
                 </div>
               </div>
               <div class="search-results-right">
-                <ion-icon :icon="chevronForwardOutline"></ion-icon>
+                <ion-icon :icon="chevronForwardOutline" id="program-detail-modal"></ion-icon>
                 <ion-label>Recognized in Jordan</ion-label>
               </div>
             </div>
           </ion-card>
+          <ion-modal class="program-detail-modal" trigger="program-detail-modal" ref="program-detail-modal"
+            :initial-breakpoint="1" :breakpoints="[0, 1]">
+            <ExploreProgramDetail />
+          </ion-modal>
         </div>
       </div>
     </ion-content>
@@ -84,10 +88,12 @@ import {
   IonImg,
   IonIcon,
   IonCard,
+  IonModal,
 } from '@ionic/vue';
 
 import ExploreHeader from '../../components/ExploreHeader.vue';
 import ExploreFilterFooter from '../../components/ExploreFilterFooter.vue';
+import ExploreProgramDetail from '../../components/ExploreProgramDetail.vue';
 
 import { chevronForwardOutline } from "ionicons/icons";
 </script>
