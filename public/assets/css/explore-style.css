@@ -434,6 +434,7 @@ ion-card ion-label h3 {
 
 .uni-detail-modal .ion-page {
   padding: 20px 0px 0px 0px;
+  justify-content: flex-start;
 }
 
 .uni-detail-title {
@@ -516,4 +517,23 @@ ion-card ion-label h3 {
 .btn-uni-detail ion-icon {
   color: #ffffff;
   font-size: 24px;
+}
+
+.uni-detail-list-card {
+  padding: 10px;
+}
+
+.uni-detail-list-card ion-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #203456;
+}
+
+.uni-detail-list-card ion-label {
+  font-size: 20px;
+  color: #606060;
+}
+
+.uni-detail-list-card ion-row {
+  justify-content: space-between;
 }
