@@ -35,6 +35,10 @@
   margin-left: 5px;
 }
 
+ion-modal {
+  --height: calc(100% - (var(--ion-safe-area-top) + 60px));
+}
+
 /* Explore Home page */
 .ion-page {
   background-color: #F5F5F5;
@@ -49,6 +53,18 @@
 ion-item {
   --inner-border-width: 0 0 0px 0;
   --min-height: 0px;
+}
+
+.explore-slider {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  flex-wrap: nowrap;
+}
+
+.explore-slider ion-card {
+  min-width: 250px;
+  border-radius: 15px;
 }
 
 .explore-title {
@@ -362,7 +378,7 @@ ion-card ion-label h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
   background: #1C345A;
   border-radius: 25px 25px 0px 0px;
 }
@@ -482,7 +498,7 @@ ion-card ion-label h3 {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(180deg,rgba(245, 245, 245, 0.5) 0.00%,#f5f5f5 100.00%);
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0.5) 0.00%, #f5f5f5 100.00%);
   pointer-events: none;
   /* To ensure the overlay doesn't interfere with any clicks */
 }

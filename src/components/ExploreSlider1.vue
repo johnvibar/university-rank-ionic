@@ -9,7 +9,8 @@
     </ion-item>
     <ion-item>
       <ion-label>
-        <h2>Heriot-Watt University Malaysia</h2>
+        <h2>Heriot-Watt</h2>
+        <h2>University Malaysia</h2>
         <h6>United States of America</h6>
       </ion-label>
     </ion-item>

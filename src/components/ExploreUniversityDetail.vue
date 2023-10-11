@@ -92,7 +92,7 @@
       </div>
 
       <ion-grid>
-        <ion-row>
+        <ion-row class="explore-slider">
           <ExploreSlider2 />
           <ExploreSlider2 />
         </ion-row>

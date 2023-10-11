@@ -11,7 +11,7 @@
       </ion-item>
 
       <ion-grid>
-        <ion-row>
+        <ion-row class="explore-slider">
           <ExploreSlider1 />
           <ExploreSlider1 />
         </ion-row>
@@ -24,7 +24,7 @@
       </ion-item>
 
       <ion-grid>
-        <ion-row>
+        <ion-row class="explore-slider">
           <ExploreSlider2 />
           <ExploreSlider2 />
         </ion-row>
