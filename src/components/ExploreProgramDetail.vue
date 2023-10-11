@@ -93,5 +93,6 @@ import {
   IonLabel,
   IonCard,
   IonImg,
+  IonButton,
 } from "@ionic/vue";
 </script>

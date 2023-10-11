@@ -2,15 +2,13 @@
   <ion-card>
     <ion-item>
       <ion-label>
-        <h2>Heriot-Watt University Malaysia</h2>
-        <h6>United States of America</h6>
+        <h2>MSc Health Research Methods</h2>
       </ion-label>
     </ion-item>
     <ion-item>
       <ion-img src="../../public/assets/img/explore/university-of-oxford.png"></ion-img>
       <ion-label>
-        <h4>Local #1 | Global #1</h4>
-        <h4>Top University</h4>
+        <h4>Heriot-Watt University Malaysia</h4>
       </ion-label>
     </ion-item>
     <ion-item>
