@@ -29,6 +29,7 @@ import SearchResultPrograms from '../pages/explore/SearchResultPrograms.vue';
 import SearchResultProgramsList from '../pages/explore/SearchResultProgramsList.vue';
 import SearchResultInstitutions from '../pages/explore/SearchResultInstitutions.vue';
 import SearchResultProInst from '../pages/explore/SearchResultProInst.vue';
+import ExploreCountry from '../pages/explore/ExploreCountry.vue';
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -61,7 +62,7 @@ const routes: Array<RouteRecordRaw> = [
     ]
   },
 
-  // AuthTab Children pages
+  // Tab Children pages
   {
     path: '/',
     component: Tabs,
@@ -75,9 +76,14 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: '/explore/home',
-        name: 'exploreHome',
+        name: 'explore-home',
         component: ExploreHome,
       },
+      {
+        path: '/explore/country',
+        name: 'explore-country',
+        component: ExploreCountry,
+      }
     ]
   },
 

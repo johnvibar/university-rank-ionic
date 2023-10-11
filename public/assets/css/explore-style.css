@@ -60,6 +60,11 @@ ion-item {
   flex-direction: row;
   overflow: auto;
   flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.explore-slider::-webkit-scrollbar {
+  display: none;
 }
 
 .explore-slider ion-card {
@@ -536,4 +541,66 @@ ion-card ion-label h3 {
 
 .uni-detail-list-card ion-row {
   justify-content: space-between;
+}
+
+/* Explore Country Page*/
+.explore-country-content {
+  --padding-top: 10px;
+  --padding-start: 10px;
+  --padding-end: 10px;
+}
+
+.explore-country-title {
+  text-align: center;
+}
+
+.explore-country-title ion-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1c345a;
+}
+
+.explore-country-title ion-label {
+  font-size: 20px;
+  color: #606060;
+}
+
+.country-slider-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.country-slider-title ion-label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1c345a;
+}
+
+.explore-country-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore-country-component .country-name {
+  font-size: 20px;
+  color: #1c345a;
+}
+
+.explore-country-component .uni-amount {
+  font-size: 16px;
+  color: #1c345a; 
+}
+
+.explore-slider .explore-country-component {
+  min-width: 150px;
+}
+
+.country-slider-container {
+  padding-top: 20px;
+}
+
+.country-slider-container hr {
+  border-bottom: 1px solid #BCBCBC;
+  width: 85%;
 }
