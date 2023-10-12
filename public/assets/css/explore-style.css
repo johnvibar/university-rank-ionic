@@ -666,3 +666,143 @@ ion-card ion-label h3 {
   float: right;
   margin-bottom: 5px;
 }
+
+/* Filter Modal */
+.filter-modal {
+  --border-radius: 25px 25px 0px 0px;
+}
+
+.filter-modal .ion-page {
+  padding: 20px 10px 60px 10px;
+  background: #ffffff;
+  position: relative;
+}
+
+.sub-section-title ion-label {
+  font-size: 20px;
+  color: #1c345a;
+}
+
+.sub-section-title b {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1c345a;
+}
+
+.sub-section-title span {
+  font-size: 20px;
+  color: #00aeef;
+  text-decoration: underline;
+}
+
+.filter-item-row {
+  margin-top: 20px;
+}
+
+.filter-item ion-img {
+  width: 23px;
+  height: 23px;
+}
+
+.filter-item {
+  --background: #F5F5F5;
+  border-radius: 15px;
+}
+
+.filter-item ion-label {
+  font-size: 20px !important;
+  color: #1C345A !important;
+  margin-left: 5px;
+}
+
+.filter-item span {
+  font-size: 20px;
+  color: #00AEEF;
+  text-decoration: underline;
+}
+
+.icon-remove {
+  margin-left: 10px;
+}
+
+.filter-divider {
+  border-bottom: 1px solid #BCBCBC;
+  width: 85%;
+  margin-top: 30px;
+}
+
+ion-range {
+  --bar-background-active: #1C345A;
+  --bar-height: 5px;
+  --bar-border-radius: 5px;
+  padding-top: 0px;
+}
+
+.fee-range-input ion-item {
+  border: 1px solid #BCBCBC;
+  border-radius: 5px;
+  --padding-start: 5px;
+  --inner-padding-end: 5px;
+  --padding-top: 0px;
+}
+
+.fee-range-input {
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fee-range-input ion-label {
+  margin: 10px;
+}
+
+.fee-range-input .sc-ion-input-md-h:not(.legacy-input) {
+  min-height: 0px;
+}
+
+.filter-tag {
+  --background: #F5F5F5;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.filter-tag-selected {
+  --background: #1C345A;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.filter-tag ion-label {
+  font-size: 20px !important;
+  color: #1C345A !important;
+}
+
+.filter-tag-selected ion-label {
+  font-size: 20px !important;
+  color: #ffffff!important;
+}
+
+.filter-footer {
+  position: absolute;
+  background: #1C345A;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  padding: 10px 10px;
+  width: 100%;
+}
+
+.filter-footer ion-label {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.btn-filter-reset {
+  font-size: 20px!important;
+  font-weight: 300!important;
+  color: #00aeef!important;
+}
