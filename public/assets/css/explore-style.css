@@ -622,3 +622,21 @@ ion-card ion-label h3 {
   font-weight: bold;
   color: #1c345a;
 }
+
+/* Country Detail Modal */
+.country-detail {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.country-detail ion-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1c345a;
+}
+
+.country-detail ion-label {
+  font-size: 20px;
+  color: #606060;
+}

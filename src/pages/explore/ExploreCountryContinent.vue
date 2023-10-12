@@ -39,7 +39,7 @@
       <ion-grid>
         <ion-row>
           <ion-col size="6">
-            <ExploreCountry />
+            <ExploreCountry id="country-detail-modal" />
           </ion-col>
           <ion-col size="6">
             <ExploreCountry />
@@ -53,6 +53,10 @@
         </ion-row>
       </ion-grid>
 
+      <ion-modal class="program-detail-modal" trigger="country-detail-modal" ref="country-detail-modal"
+        :initial-breakpoint="1" :breakpoints="[0, 1]">
+        <ExploreCountryDetail />
+      </ion-modal>
     </ion-content>
   </ion-page>
 </template>
@@ -68,9 +72,12 @@ import {
   IonContent,
   IonCard,
   IonImg,
+  IonCol,
+  IonModal,
 } from '@ionic/vue';
 
 import ExploreHeader from '../../components/ExploreHeader.vue';
 import ExploreCountry from '../../components/ExploreCountry.vue';
+import ExploreCountryDetail from '@/components/ExploreCountryDetail.vue';
 import { chevronForwardOutline } from "ionicons/icons";
 </script>
