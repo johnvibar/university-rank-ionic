@@ -30,6 +30,7 @@ import SearchResultProgramsList from '../pages/explore/SearchResultProgramsList.
 import SearchResultInstitutions from '../pages/explore/SearchResultInstitutions.vue';
 import SearchResultProInst from '../pages/explore/SearchResultProInst.vue';
 import ExploreCountry from '../pages/explore/ExploreCountry.vue';
+import ExploreCountryContinent from '../pages/explore/ExploreCountryContinent.vue';
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -83,6 +84,11 @@ const routes: Array<RouteRecordRaw> = [
         path: '/explore/country',
         name: 'explore-country',
         component: ExploreCountry,
+      },
+      {
+        path: '/explore/country-continent',
+        name: 'explore-country-continent',
+        component: ExploreCountryContinent,
       }
     ]
   },
@@ -138,7 +144,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/explore/search-result-programs-list',
-    name: 'search-result-programs',
+    name: 'search-result-programs-list',
     component: SearchResultProgramsList
   },
   {
