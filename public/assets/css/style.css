@@ -7,6 +7,13 @@ ion-icon {
   font-size: 20px;
 }
 
+.header {
+  background-color: #1C345A;
+  padding: 20px 5px 10px 5px;
+  border-radius: 0px 0px 25px 25px;
+}
+
+
 #container {
   padding: 10px;
   background-color: #F5F5F5;

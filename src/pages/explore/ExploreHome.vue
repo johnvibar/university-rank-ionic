@@ -96,7 +96,6 @@ import {
   IonRow,
 } from "@ionic/vue";
 
-import '../../../public/assets/css/explore-style.css';
 import ExploreHeader from '@/components/explore/ExploreHeader.vue';
 import ExploreSlider1 from '@/components/explore/ExploreSlider1.vue';
 import ExploreSlider2 from '@/components/explore/ExploreSlider2.vue';

@@ -1,0 +1,44 @@
+.app-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #1c345a;
+  margin-top: 10px;
+}
+
+.app-list-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 6px;
+  padding: 5px;
+  min-height: 70px;
+}
+
+.app-list-card ion-row {
+  justify-content: space-between;
+}
+
+.app-list-card ion-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 300;
+  color: #203456;
+}
+
+.app-list-card ion-label {
+  font-size: 16px;
+  color: #203456;
+}
+
+.app-list-card-status {
+  font-size: 16px !important;
+  color: #00aeef !important;
+}
+
+.app-list-card-status span {
+  font-size: 16px;
+  color: #ffb300;
+}

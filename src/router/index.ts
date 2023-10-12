@@ -3,6 +3,8 @@ import { RouteRecordRaw } from 'vue-router';
 
 import '../../public/assets/css/auth-style.css';
 import '../../public/assets/css/style.css';
+import '../../public/assets/css/explore-style.css';
+import '../../public/assets/css/app-style.css';
 
 import Tabs from '../components/Tabs.vue';
 import AuthTabs from '../components/AuthTabs.vue';
@@ -34,6 +36,9 @@ import ExploreCountryContinent from '../pages/explore/ExploreCountryContinent.vu
 import ExploreCountryInspired from '../pages/explore/ExploreCountryInspired.vue';
 import ExploreCountrySecrets from '../pages/explore/ExploreCountrySecrets.vue';
 import ExploreCountryTopArticle from '../pages/explore/ExploreCountryTopArticle.vue';
+
+// 5. Application pages
+import AppList from '../pages/app/AppList.vue';
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -78,6 +83,8 @@ const routes: Array<RouteRecordRaw> = [
         name: 'profile',
         component: Profile
       },
+
+      // 4. Explore result pages
       {
         path: '/explore/home',
         name: 'explore-home',
@@ -107,6 +114,13 @@ const routes: Array<RouteRecordRaw> = [
         path: '/explore/country-top-article',
         name: 'explore-country-top-article',
         component: ExploreCountryTopArticle,
+      },
+
+      // 5. Application pages
+      {
+        path: 'app/list',
+        name: 'app-list',
+        component: AppList,
       },
     ]
   },

@@ -14,8 +14,8 @@
         </ion-tab-button>
 
         <ion-tab-button tab="application" href="/auth/app-login">
-          <ion-img src="/assets/img/icons/footer/icon-footer-application.svg" />
-          <ion-label class="footer-ion-label">Application</ion-label>
+          <ion-img :src="AppTabIcon" />
+          <ion-label :class="AppTabLabel">Application</ion-label>
         </ion-tab-button>
 
         <ion-tab-button tab="profile" href="/profile">
@@ -49,6 +49,12 @@ export default {
     },
     ExploreTabLabel() {
       return this.$route.path.includes('explore') ? 'footer-ion-label-selected' : 'footer-ion-label';
+    },
+    AppTabIcon() {
+      return this.$route.path.includes('app') ? '/assets/img/icons/footer/icon-footer-application-selected.svg' : '/assets/img/icons/footer/icon-footer-explore.svg';
+    },
+    AppTabLabel() {
+      return this.$route.path.includes('app') ? 'footer-ion-label-selected' : 'footer-ion-label';
     },
   }
 }

@@ -22,7 +22,6 @@ import {
   IonText,
 } from "@ionic/vue";
 
-import '../../../public/assets/css/explore-style.css';
 import ExploreHeader from '@/components/explore/ExploreHeader.vue';
 
 </script>

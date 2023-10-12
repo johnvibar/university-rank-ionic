@@ -1,5 +1,5 @@
 <template>
-  <ion-header class="explore-header">
+  <ion-header class="header">
     <ion-img src="../../public/assets/img/explore/headerbar.svg"></ion-img>
   </ion-header>
 </template>
