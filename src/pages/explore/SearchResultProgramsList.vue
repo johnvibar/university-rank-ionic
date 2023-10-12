@@ -91,9 +91,9 @@ import {
   IonModal,
 } from '@ionic/vue';
 
-import ExploreHeader from '../../components/ExploreHeader.vue';
-import ExploreFilterFooter from '../../components/ExploreFilterFooter.vue';
-import ExploreProgramDetail from '../../components/ExploreProgramDetail.vue';
+import ExploreHeader from '@/components/explore/ExploreHeader.vue';
+import ExploreFilterFooter from '@/components/explore/ExploreFilterFooter.vue';
+import ExploreProgramDetail from '@/components/explore/ExploreProgramDetail.vue';
 
 import { chevronForwardOutline } from "ionicons/icons";
 </script>

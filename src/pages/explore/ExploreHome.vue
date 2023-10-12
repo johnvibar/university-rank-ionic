@@ -97,9 +97,9 @@ import {
 } from "@ionic/vue";
 
 import '../../../public/assets/css/explore-style.css';
-import ExploreHeader from '../../components/ExploreHeader.vue';
-import ExploreSlider1 from '../../components/ExploreSlider1.vue';
-import ExploreSlider2 from '../../components/ExploreSlider2.vue';
+import ExploreHeader from '@/components/explore/ExploreHeader.vue';
+import ExploreSlider1 from '@/components/explore/ExploreSlider1.vue';
+import ExploreSlider2 from '@/components/explore/ExploreSlider2.vue';
 import { chevronForwardOutline } from "ionicons/icons";
 
 </script>

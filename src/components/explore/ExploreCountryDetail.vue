@@ -67,7 +67,7 @@ import {
 } from "@ionic/vue";
 
 import { chevronForwardOutline, star } from "ionicons/icons";
-import ExploreSlider1 from '../components/ExploreSlider1.vue';
+import ExploreSlider1 from '@/components/explore/ExploreSlider1.vue';
 
 export default {
   components: {

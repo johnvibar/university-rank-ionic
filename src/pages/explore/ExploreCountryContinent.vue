@@ -76,8 +76,8 @@ import {
   IonModal,
 } from '@ionic/vue';
 
-import ExploreHeader from '../../components/ExploreHeader.vue';
-import ExploreCountry from '../../components/ExploreCountry.vue';
-import ExploreCountryDetail from '@/components/ExploreCountryDetail.vue';
+import ExploreHeader from '@/components/explore/ExploreHeader.vue';
+import ExploreCountry from '@/components/explore/ExploreCountry.vue';
+import ExploreCountryDetail from '@/components/explore/ExploreCountryDetail.vue';
 import { chevronForwardOutline } from "ionicons/icons";
 </script>

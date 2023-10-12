@@ -128,7 +128,7 @@ import {
   IonContent,
 } from '@ionic/vue';
 
-import ExploreHeader from '../../components/ExploreHeader.vue';
-import ExploreCountry from '../../components/ExploreCountry.vue';
+import ExploreHeader from '../../components/explore/ExploreHeader.vue';
+import ExploreCountry from '../../components/explore/ExploreCountry.vue';
 import { chevronForwardOutline } from "ionicons/icons";
 </script>

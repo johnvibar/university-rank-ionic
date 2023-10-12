@@ -23,6 +23,6 @@ import {
 } from "@ionic/vue";
 
 import '../../../public/assets/css/explore-style.css';
-import ExploreHeader from '../../components/ExploreHeader.vue';
+import ExploreHeader from '@/components/explore/ExploreHeader.vue';
 
 </script>

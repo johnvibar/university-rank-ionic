@@ -214,7 +214,7 @@ import {
 } from "@ionic/vue";
 
 import { chevronForwardOutline, star } from "ionicons/icons";
-import ExploreSlider2 from '../components/ExploreSlider2.vue';
+import ExploreSlider2 from '@/components/explore/ExploreSlider2.vue';
 
 export default {
   components: {

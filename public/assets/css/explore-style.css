@@ -551,6 +551,7 @@ ion-card ion-label h3 {
 
 .explore-country-title {
   text-align: center;
+  margin-top: 10px;
 }
 
 .explore-country-title ion-title {
@@ -639,4 +640,29 @@ ion-card ion-label h3 {
 .country-detail ion-label {
   font-size: 20px;
   color: #606060;
+}
+
+/* Country Get Inspired Page */
+.country-inspired-description {
+  font-size: 20px;
+  color: #1c345a;
+  padding: 10px;
+}
+
+.country-article-card {
+  margin-bottom: 20px;
+}
+
+.country-article-card div {
+  padding: 10px;
+}
+
+.country-article-card ion-text {
+  font-size: 20px;
+  color: #606060;
+}
+
+.country-article-card ion-icon {
+  float: right;
+  margin-bottom: 5px;
 }

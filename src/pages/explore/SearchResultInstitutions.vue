@@ -125,9 +125,9 @@ import {
   IonModal,
 } from '@ionic/vue';
 
-import ExploreHeader from '../../components/ExploreHeader.vue';
-import ExploreFilterFooter from '../../components/ExploreFilterFooter.vue';
-import ExploreUniversityDetail from '../../components/ExploreUniversityDetail.vue';
+import ExploreHeader from '@/components/explore/ExploreHeader.vue';
+import ExploreFilterFooter from '@/components/explore/ExploreFilterFooter.vue';
+import ExploreUniversityDetail from '@/components/explore/ExploreUniversityDetail.vue';
 
 import { chevronForwardOutline } from "ionicons/icons";
 </script>

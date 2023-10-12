@@ -31,6 +31,9 @@ import SearchResultInstitutions from '../pages/explore/SearchResultInstitutions.
 import SearchResultProInst from '../pages/explore/SearchResultProInst.vue';
 import ExploreCountry from '../pages/explore/ExploreCountry.vue';
 import ExploreCountryContinent from '../pages/explore/ExploreCountryContinent.vue';
+import ExploreCountryInspired from '../pages/explore/ExploreCountryInspired.vue';
+import ExploreCountrySecrets from '../pages/explore/ExploreCountrySecrets.vue';
+import ExploreCountryTopArticle from '../pages/explore/ExploreCountryTopArticle.vue';
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -89,7 +92,22 @@ const routes: Array<RouteRecordRaw> = [
         path: '/explore/country-continent',
         name: 'explore-country-continent',
         component: ExploreCountryContinent,
-      }
+      },
+      {
+        path: '/explore/country-inspired',
+        name: 'explore-country-inspired',
+        component: ExploreCountryInspired,
+      },
+      {
+        path: '/explore/country-secrets',
+        name: 'explore-country-secrets',
+        component: ExploreCountrySecrets,
+      },
+      {
+        path: '/explore/country-top-article',
+        name: 'explore-country-top-article',
+        component: ExploreCountryTopArticle,
+      },
     ]
   },
 
