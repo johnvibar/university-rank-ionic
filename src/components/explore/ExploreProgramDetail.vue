@@ -1,5 +1,5 @@
 <template>
-  <div class="pro-detail-component">
+  <ion-content class="pro-detail-component">
     <div class="pro-detail-title">
       <ion-label>BS Software Engineering</ion-label>
       <hr />
@@ -57,7 +57,7 @@
     </div>
 
     <ion-row class="upcoming-intakes">
-      <ion-item>
+      <ion-item id="intake-modal">
         <ion-label>August 2023</ion-label>
       </ion-item>
       <ion-item>
@@ -70,7 +70,32 @@
         <ion-label>August 2023</ion-label>
       </ion-item>
     </ion-row>
-  </div>
+    <ion-modal class="intake-modal" trigger="intake-modal" ref="intake-modal" :initial-breakpoint="1"
+      :breakpoints="[0, 1]">
+      <div class="intake-modal-title">
+        <ion-title>Intake</ion-title>
+        <ion-text>Please choose your preferred intake. By default, the earliest intake is chosen</ion-text>
+      </div>
+      <ion-card class="intake-date">
+        <ion-item>
+          <ion-label>
+            <p>Intake</p>
+            <h2>January 2024</h2>
+          </ion-label>
+          <ion-icon :icon="chevronForwardOutline"></ion-icon>
+        </ion-item>
+      </ion-card>
+      <ion-item>
+        <ion-checkbox></ion-checkbox>
+        <ion-text>I, hereby, grant UNIRANKS and/or its agents the authority to act
+          on my behalf and represent me and my application with the institutions.</ion-text>
+      </ion-item>
+      <div class="modal-upload-section">
+        <ion-img src="assets/img/icons/icon-arrow-back.svg" @click="open_modal_settings_dismiss()"></ion-img>
+        <ion-button fill="clear">Continue</ion-button>
+      </div>
+    </ion-modal>
+  </ion-content>
 
   <div class="pro-detail-footer">
     <div>
@@ -94,5 +119,13 @@ import {
   IonCard,
   IonImg,
   IonButton,
+  IonContent,
+  IonModal,
+  IonCheckbox,
+  IonTitle,
+  IonText,
+  IonIcon,
 } from "@ionic/vue";
+
+import { chevronForwardOutline } from "ionicons/icons";
 </script>

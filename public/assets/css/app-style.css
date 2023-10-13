@@ -42,3 +42,45 @@
   font-size: 16px;
   color: #ffb300;
 }
+
+.intake-modal {
+  --border-radius: 25px 25px 0px 0px;
+  --height: auto;
+}
+
+.intake-modal .ion-page {
+  background: #ffffff;
+}
+
+.intake-modal-title {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.intake-modal-title ion-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1c345a;
+}
+
+.intake-modal-title ion-text {
+  font-size: 16px;
+  color: #1c345a;
+  width: 60%;
+}
+
+.intake-date {
+  border-radius: 15px;
+}
+
+.intake-date h2 {
+  font-size: 20px;
+  color: #1c345a;
+}
+
+ion-checkbox {
+  padding: 20px 10px 50px 10px;
+}

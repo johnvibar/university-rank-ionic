@@ -13,6 +13,10 @@ ion-icon {
   border-radius: 0px 0px 25px 25px;
 }
 
+ion-modal::part(handle) {
+  background-color: #1C345A;
+  top: 10px;
+}
 
 #container {
   padding: 10px;
