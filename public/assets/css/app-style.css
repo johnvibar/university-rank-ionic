@@ -81,6 +81,13 @@
   color: #1c345a;
 }
 
-ion-checkbox {
-  padding: 20px 10px 50px 10px;
+.intake-checkbox {
+  margin-top: 20px;
+  margin-left: 10px;
+  flex-wrap: nowrap;
+  padding-bottom: 50px;
+}
+
+.intake-checkbox ion-label {
+  margin-left: 10px;
 }

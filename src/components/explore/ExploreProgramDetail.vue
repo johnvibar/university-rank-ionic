@@ -85,11 +85,11 @@
           <ion-icon :icon="chevronForwardOutline"></ion-icon>
         </ion-item>
       </ion-card>
-      <ion-item>
+      <ion-row class="intake-checkbox">
         <ion-checkbox></ion-checkbox>
-        <ion-text>I, hereby, grant UNIRANKS and/or its agents the authority to act
-          on my behalf and represent me and my application with the institutions.</ion-text>
-      </ion-item>
+        <ion-label>I, hereby, grant UNIRANKS and/or its agents the authority to act
+          on my behalf and represent me and my application with the institutions.</ion-label>
+      </ion-row>
       <div class="modal-upload-section">
         <ion-img src="assets/img/icons/icon-arrow-back.svg" @click="open_modal_settings_dismiss()"></ion-img>
         <ion-button fill="clear">Continue</ion-button>
