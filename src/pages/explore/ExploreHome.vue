@@ -5,7 +5,7 @@
     <ion-content>
       <ion-title class="explore-title">Design Your Future</ion-title>
       <ion-item>
-        <ion-img src="../../../public/assets/img/explore/university.png"></ion-img>
+        <ion-img src="/assets/img/explore/university.png"></ion-img>
         <ion-title class="explore-subtitle">University Rankings | <ion-text>36,582</ion-text></ion-title>
         <ion-icon :icon="chevronForwardOutline"></ion-icon>
       </ion-item>
@@ -18,7 +18,7 @@
       </ion-grid>
 
       <ion-item>
-        <ion-img src="../../../public/assets/img/explore/student-hat.png"></ion-img>
+        <ion-img src="/assets/img/explore/student-hat.png"></ion-img>
         <ion-title class="explore-subtitle">Programs | <ion-text>52,300</ion-text></ion-title>
         <ion-icon :icon="chevronForwardOutline"></ion-icon>
       </ion-item>
@@ -35,14 +35,14 @@
         <ion-row>
           <ion-col>
             <ion-card>
-              <ion-img src="../../../public/assets/img/explore/study-destination.png"></ion-img>
+              <ion-img src="/assets/img/explore/study-destination.png"></ion-img>
               <ion-card-header>
                 <ion-card-title>Study Destination</ion-card-title>
               </ion-card-header>
               <ion-card-content>Find your own ideal study destination</ion-card-content>
             </ion-card>
             <ion-card>
-              <ion-img src="../../../public/assets/img/explore/unlocking-the-secrets.png"></ion-img>
+              <ion-img src="/assets/img/explore/unlocking-the-secrets.png"></ion-img>
               <ion-card-header>
                 <ion-card-title>Unlocking the Secrets</ion-card-title>
               </ion-card-header>
@@ -51,21 +51,21 @@
           </ion-col>
           <ion-col>
             <ion-card>
-              <ion-img src="../../../public/assets/img/explore/top-unis.png"></ion-img>
+              <ion-img src="/assets/img/explore/top-unis.png"></ion-img>
               <ion-card-header>
                 <ion-card-title>Top Universitiews</ion-card-title>
               </ion-card-header>
               <ion-card-content>Exploring UNIRANKS Top Universities</ion-card-content>
             </ion-card>
             <ion-card>
-              <ion-img src="../../../public/assets/img/explore/get-inspired.png"></ion-img>
+              <ion-img src="/assets/img/explore/get-inspired.png"></ion-img>
               <ion-card-header>
                 <ion-card-title>Get Inspired</ion-card-title>
               </ion-card-header>
               <ion-card-content>Essential Tips for Choosing the Right University and Major</ion-card-content>
             </ion-card>
             <ion-card>
-              <ion-img src="../../../public/assets/img/explore/top-articles.png"></ion-img>
+              <ion-img src="/assets/img/explore/top-articles.png"></ion-img>
               <ion-card-header>
                 <ion-card-title>Top Articles</ion-card-title>
               </ion-card-header>

@@ -1,6 +1,6 @@
 <template>
   <div class="explore-country-component">
-    <ion-img src="../../public/assets/img/explore/explore-country-australia.png"></ion-img>
+    <ion-img src="/assets/img/explore/explore-country-australia.png"></ion-img>
     <ion-label class="country-name">Australia</ion-label>
     <ion-label class="uni-amount">150 Universities</ion-label>
   </div>

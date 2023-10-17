@@ -1,7 +1,7 @@
 <template>
   <ion-card>
     <ion-item>
-      <ion-img src="../../public/assets/img/explore/university-of-oxford.png"></ion-img>
+      <ion-img src="/assets/img/explore/university-of-oxford.png"></ion-img>
       <ion-label>
         <h4>Local #1 | Global #1</h4>
         <h4>Top University</h4>

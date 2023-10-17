@@ -118,7 +118,7 @@ const routes: Array<RouteRecordRaw> = [
 
       // 5. Application pages
       {
-        path: 'app/list',
+        path: '/app/list',
         name: 'app-list',
         component: AppList,
       },

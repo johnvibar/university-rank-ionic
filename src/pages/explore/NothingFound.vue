@@ -6,7 +6,7 @@
       <div id="container">
         <div class="nothing-found">
           <ion-text class="nothing-title">Oops, looks like we hit a void</ion-text>
-          <ion-img src="../../../public/assets/img/explore/nothing-logo.png"></ion-img>
+          <ion-img src="/assets/img/explore/nothing-logo.png"></ion-img>
           <ion-text class="nothing-description">no matching records found!</ion-text>
         </div>
       </div>

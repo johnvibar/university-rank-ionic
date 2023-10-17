@@ -1,7 +1,7 @@
 <template>
   <ion-footer class="explore-filter-footer" id="filter-modal">
     <ion-row>
-      <ion-img src="../../public/assets/img/explore/explore-filter-footer.png"></ion-img>
+      <ion-img src="/assets/img/explore/explore-filter-footer.png"></ion-img>
       <ion-text>Filter my Preferences</ion-text>
     </ion-row>
   </ion-footer>
