@@ -36,6 +36,7 @@ import ExploreCountryContinent from '../pages/explore/ExploreCountryContinent.vu
 import ExploreCountryInspired from '../pages/explore/ExploreCountryInspired.vue';
 import ExploreCountrySecrets from '../pages/explore/ExploreCountrySecrets.vue';
 import ExploreCountryTopArticle from '../pages/explore/ExploreCountryTopArticle.vue';
+import ExploreProfileStep1 from '../pages/explore/ExploreProfileStep1.vue';
 
 // 5. Application pages
 import AppList from '../pages/app/AppList.vue';
@@ -114,6 +115,11 @@ const routes: Array<RouteRecordRaw> = [
         path: '/explore/country-top-article',
         name: 'explore-country-top-article',
         component: ExploreCountryTopArticle,
+      },
+      {
+        path: '/explore/profile-step-1',
+        name: 'explore-profile-step-1',
+        component: ExploreProfileStep1,
       },
 
       // 5. Application pages
