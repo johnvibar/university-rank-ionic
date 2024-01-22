@@ -9,6 +9,7 @@ Install the Ionic CLI with npm:
 ```
 npm install -g @ionic/cli
 ```
+
 ## Run the project
 
 ```
